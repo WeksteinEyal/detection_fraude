@@ -12,33 +12,45 @@ build_property.EnableSingleFileAnalyzer = true
 build_property.EnableTrimAnalyzer = false
 build_property.IncludeAllContentForSelfExtract = 
 build_property.RootNamespace = fraud_detect
-build_property.ProjectDir = C:\Users\eyalw\Source\Repos\theHoodog\detection_fraude\fraud_detect\
+build_property.ProjectDir = C:\Users\eyalw\source\repos\theHoodog\detection_fraude\fraud_detect\
 
-[C:/Users/eyalw/Source/Repos/theHoodog/detection_fraude/fraud_detect/App.xaml]
+[C:/Users/eyalw/source/repos/theHoodog/detection_fraude/fraud_detect/AboutPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = fraud_detect.AboutPage.xaml
+build_metadata.AdditionalFiles.TargetPath = AboutPage.xaml
+build_metadata.AdditionalFiles.RelativePath = AboutPage.xaml
+
+[C:/Users/eyalw/source/repos/theHoodog/detection_fraude/fraud_detect/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = fraud_detect.App.xaml
 build_metadata.AdditionalFiles.TargetPath = App.xaml
 build_metadata.AdditionalFiles.RelativePath = App.xaml
 
-[C:/Users/eyalw/Source/Repos/theHoodog/detection_fraude/fraud_detect/AppShell.xaml]
+[C:/Users/eyalw/source/repos/theHoodog/detection_fraude/fraud_detect/AppShell.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = fraud_detect.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
-[C:/Users/eyalw/Source/Repos/theHoodog/detection_fraude/fraud_detect/MainPage.xaml]
+[C:/Users/eyalw/source/repos/theHoodog/detection_fraude/fraud_detect/Forms.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = fraud_detect.Forms.xaml
+build_metadata.AdditionalFiles.TargetPath = Forms.xaml
+build_metadata.AdditionalFiles.RelativePath = Forms.xaml
+
+[C:/Users/eyalw/source/repos/theHoodog/detection_fraude/fraud_detect/MainPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = fraud_detect.MainPage.xaml
 build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
 
-[C:/Users/eyalw/Source/Repos/theHoodog/detection_fraude/fraud_detect/Resources/Styles/Colors.xaml]
+[C:/Users/eyalw/source/repos/theHoodog/detection_fraude/fraud_detect/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = fraud_detect.Resources.Styles.Colors.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
 
-[C:/Users/eyalw/Source/Repos/theHoodog/detection_fraude/fraud_detect/Resources/Styles/Styles.xaml]
+[C:/Users/eyalw/source/repos/theHoodog/detection_fraude/fraud_detect/Resources/Styles/Styles.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = fraud_detect.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
