@@ -1,0 +1,1 @@
+C:\app_fraud_det\app_fraud_det\app_fraud_det.csproj;x64
