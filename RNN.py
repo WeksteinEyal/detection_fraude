@@ -7,12 +7,13 @@ Created on Thu Nov  9 10:53:13 2023
 import pandas as pd
 from sklearn.preprocessing import LabelEncoder
 from sklearn.preprocessing import MinMaxScaler
-from sklearn.model_selection import train_test_split
-from tensorflow.keras.layers import Dense ,SimpleRNN
+from sklearn.model_selection import train_test_split , GridSearchCV
+from tensorflow.keras.layers import Dense ,SimpleRNN, Dropout
 from keras.models import Sequential
-from sklearn.metrics import classification_report
+from scikeras.wrappers import KerasClassifier
 import matplotlib.pyplot as plt
 import seaborn as sns
+from imblearn.over_sampling import SMOTE
 
 
 df = pd.read_csv(r"C:\Users\guery\Desktop\Fraud detection\card_transaction_2.csv")
@@ -69,56 +70,35 @@ scaler = MinMaxScaler()
 X_train_scaled = scaler.fit_transform(X_train)
 X_test_scaled = scaler.transform(X_test)
 
-'''
-# Définir une grille d'hyperparamètres à tester
-units_values = [16, 32, 64, 128]
-activation_values = ['relu', 'tanh', 'sigmoid', 'linear']
 
-best_accuracy = 0
-best_params = {}
-
-# Itérer sur la grille d'hyperparamètres
-for units, activation in product(units_values, activation_values):
+def RNN_model_ref(units, units2, activation, optimizer):  
     model = Sequential()
-    model.add(SimpleRNN(units=units, activation=activation, input_shape=(X_train_scaled.shape[1], 1)))
+    model.add(SimpleRNN(units, input_shape=(X_train_scaled.shape[1],)))
+    model.add(Dropout(0.2))
+    model.add(SimpleRNN(units2, activation=activation))
+    model.add(Dropout(0.2))
     model.add(Dense(1, activation='sigmoid'))
-    model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
+    model.compile(loss='binary_crossentropy', optimizer=optimizer, metrics=['accuracy'])
+    return model
 
-    # Entraîner le modèle
-    model.fit(X_train_scaled, y_train, epochs=10, validation_data=(X_test_scaled, y_test), verbose=0)
+model = KerasClassifier(build_fn=RNN_model_ref, verbose=1)
 
-    # Évaluer l'exactitude du modèle
-    _, accuracy = model.evaluate(X_test_scaled, y_test)
+param_grid = {
+    "units": [16, 32, 64, 128],
+    "units2": [16, 32, 64, 128],
+    "activation": ['relu', 'tanh', 'sigmoid'],
+    "optimizer": ['adam', 'sgd'],
+    "batch_size": [8, 16],
+    "epochs": [30]
+}
 
-    # Mettre à jour les meilleurs paramètres si l'exactitude actuelle est meilleure que la précédente
-    if accuracy > best_accuracy:
-        best_accuracy = accuracy
-        best_params = {'units': units, 'activation': activation}
-# Afficher les meilleurs paramètres et l'exactitude correspondante
-print("Les meilleurs paramètres sont :", best_params)
-print("La meilleure exactitude est :", best_accuracy)    
+grid = GridSearchCV(model, param_grid=param_grid, scoring='accuracy', cv=3)
+grid_result = grid.fit(X_train_scaled, y_train)
 
-'''
+print("Best Parameters: ", grid_result.best_params_)
+print("Best Accuracy: ", grid_result.best_score_)
 
-best_params = {'units': 128, 'activation': 'relu'}
-    
-model = Sequential()
-model.add(SimpleRNN(**best_params, input_shape=(X_train_scaled.shape[1], 1)))
-model.add(Dense(1, activation='sigmoid'))
-model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
-
-# Entraîner le modèle
-model.fit(X_train_scaled, y_train, epochs=50, validation_data=(X_test_scaled, y_test), verbose=0)      
-
-loss,acc = model.evaluate(X_test_scaled, y_test)
-
-print('Test accuracy:', acc)
-
-y_pred = model.predict(X_test_scaled)
-y_pred_binary = (y_pred > 0.5).astype(int)
-
-print(classification_report(y_test, y_pred_binary))
-
-
+best_RNN = grid_result.best_estimator_.model
+rnn = best_RNN
 
 
