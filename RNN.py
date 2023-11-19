@@ -6,14 +6,14 @@ Created on Thu Nov  9 10:53:13 2023
 """
 import pandas as pd
 from sklearn.preprocessing import LabelEncoder
-from sklearn.preprocessing import MinMaxScaler
+from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import train_test_split , GridSearchCV
-from tensorflow.keras.layers import Dense ,SimpleRNN, Dropout
+from tensorflow.keras.layers import Dense ,SimpleRNN, Dropout 
 from keras.models import Sequential
-from scikeras.wrappers import KerasClassifier
+from tensorflow.keras.wrappers.scikit_learn import KerasClassifier
 import matplotlib.pyplot as plt
 import seaborn as sns
-from imblearn.over_sampling import SMOTE
+
 
 
 df = pd.read_csv(r"C:\Users\guery\Desktop\Fraud detection\card_transaction_2.csv")
@@ -63,37 +63,46 @@ plt.show()
 
 X, y = df.drop('Is Fraud?', axis=1), df['Is Fraud?']
 
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, shuffle=True)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
-scaler = MinMaxScaler()
-
+scaler = StandardScaler()
 X_train_scaled = scaler.fit_transform(X_train)
 X_test_scaled = scaler.transform(X_test)
 
+X_train_reshaped = X_train_scaled.reshape((X_train_scaled.shape[0], 1, X_train_scaled.shape[1]))
 
-def RNN_model_ref(units, units2, activation, optimizer):  
+def create_model(units=64,units2=64,units3=64, dropout_rate=0.2,activation='sigmoid',dropout_rate2=0.2,activation2='sigmoid',dropout_rate3=0.2,activation3='sigmoid',optimizer='adam'):
     model = Sequential()
-    model.add(SimpleRNN(units, input_shape=(X_train_scaled.shape[1],)))
-    model.add(Dropout(0.2))
-    model.add(SimpleRNN(units2, activation=activation))
-    model.add(Dropout(0.2))
+    model.add(SimpleRNN(units, input_shape=(1, X_train_scaled.shape[1]), activation=activation, return_sequences=True))
+    model.add(Dropout(dropout_rate))
+    model.add(SimpleRNN(units2, activation= activation2,return_sequences=True))  
+    model.add(Dropout(dropout_rate2))
+    model.add(SimpleRNN(units3, activation= activation3))  
+    model.add(Dropout(dropout_rate3))
     model.add(Dense(1, activation='sigmoid'))
     model.compile(loss='binary_crossentropy', optimizer=optimizer, metrics=['accuracy'])
     return model
 
-model = KerasClassifier(build_fn=RNN_model_ref, verbose=1)
+
+model = KerasClassifier(build_fn=create_model, epochs=50, batch_size=64, verbose=0)
 
 param_grid = {
-    "units": [16, 32, 64, 128],
-    "units2": [16, 32, 64, 128],
-    "activation": ['relu', 'tanh', 'sigmoid'],
-    "optimizer": ['adam', 'sgd'],
-    "batch_size": [8, 16],
-    "epochs": [30]
+    'units': [32, 64, 128],
+    'units2': [32, 64, 128],
+    'units3': [32, 64, 128],
+    'dropout_rate': [0.2, 0.3, 0.4],
+    'dropout_rate2': [0.2, 0.3, 0.4],
+    'dropout_rate3': [0.2, 0.3, 0.4],
+    "activation": ['relu', 'leakyrelu'],
+    "activation2": ['relu', 'leakyrelu'],
+    "optimizer": ['adam', 'sgd']
 }
 
-grid = GridSearchCV(model, param_grid=param_grid, scoring='accuracy', cv=3)
-grid_result = grid.fit(X_train_scaled, y_train)
+
+
+grid = GridSearchCV(estimator=model, param_grid=param_grid, cv=3, scoring='accuracy', n_jobs=-1)
+
+grid_result = grid.fit(X_train_reshaped, y_train)
 
 print("Best Parameters: ", grid_result.best_params_)
 print("Best Accuracy: ", grid_result.best_score_)
