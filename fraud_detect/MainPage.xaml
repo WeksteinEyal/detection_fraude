@@ -3,32 +3,40 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="fraud_detect.MainPage">
 
-    <ScrollView>
-        <VerticalStackLayout
+    <Grid>
+
+        <Image Source="Images/bgmiuhiuodel.png"
+               Aspect="AspectFill"
+               VerticalOptions="FillAndExpand"
+               HorizontalOptions="FillAndExpand"/>
+
+        <ScrollView>
+            <VerticalStackLayout
             Spacing="25"
             Padding="30,0"
             VerticalOptions="Center">
 
-            <Image
-                Source="illan.png"
-                SemanticProperties.Description="Cute dot net bot waving hi to you!"
-                HeightRequest="400"
-                HorizontalOptions="Center" />
+                <Image
+            Source="illan.png"
+            SemanticProperties.Description="Cute dot net bot waving hi to you!"
+            HeightRequest="400"
+            HorizontalOptions="Center" />
 
-            <Label
-                Text="Fraud detector"
-                SemanticProperties.HeadingLevel="Level1"
-                FontSize="32"
-                HorizontalOptions="Center" />
+                <Label
+            Text="Fraud detector"
+            SemanticProperties.HeadingLevel="Level1"
+            FontSize="32"
+            HorizontalOptions="Center" />
 
-            <Label
-                Text="AI based transactions analyzer"
-                SemanticProperties.HeadingLevel="Level2"
-                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
-                FontSize="18"
-                HorizontalOptions="Center" />
-            
-        </VerticalStackLayout>
-    </ScrollView>
+                <Label
+            Text="AI based transactions analyzer"
+            SemanticProperties.HeadingLevel="Level2"
+            SemanticProperties.Description="Welcome to dot net Multi platform App U I"
+            FontSize="18"
+            HorizontalOptions="Center" />
+
+            </VerticalStackLayout>
+        </ScrollView>
+    </Grid>
 
 </ContentPage>

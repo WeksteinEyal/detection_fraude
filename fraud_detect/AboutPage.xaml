@@ -2,17 +2,27 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="fraud_detect.AboutPage">
-    <VerticalStackLayout Spacing="10" Margin="10">
-        <HorizontalStackLayout Spacing="10">
-            <Image Source="eyal.png"
-                   SemanticProperties.Description="The dot net bot waving hello!"
-                   HeightRequest="128" />
-            <Label FontSize="22" FontAttributes="Bold" Text="Fraud Detector" VerticalOptions="End" />
-            <Label FontSize="22" Text="v1.0" VerticalOptions="End" />
-        </HorizontalStackLayout>
 
-        <Label Text="This app is written in XAML and C# with .NET MAUI." />
-        <Label Text="Finance Engineering Master Project." />
-        <Button Text="Learn more..." Clicked="LearnMore_Clicked" />
-    </VerticalStackLayout>
+    <Grid>
+        <Image Source="Images/bgmoukhiudel.png"
+                Aspect="AspectFill"
+                VerticalOptions="FillAndExpand"
+                HorizontalOptions="FillAndExpand"/>
+
+        <VerticalStackLayout Spacing="10" Margin="10">
+            <HorizontalStackLayout Spacing="10">
+                <Image Source="eyal.png"
+               SemanticProperties.Description="The dot net bot waving hello!"
+               HeightRequest="128" />
+                <Label FontSize="22" FontAttributes="Bold" Text="Fraud Detector" VerticalOptions="End" />
+                <Label FontSize="22" Text="v1.0" VerticalOptions="End" />
+            </HorizontalStackLayout>
+
+            <Label Text="This app is written in XAML and C# with .NET MAUI." />
+            <Label Text="Finance Engineering Master Project." />
+            <Button Text="Learn more..." Clicked="LearnMore_Clicked" />
+        </VerticalStackLayout>
+
+    </Grid>
+    
 </ContentPage>

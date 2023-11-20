@@ -3,49 +3,103 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="fraud_detect.Forms"
              Title="Forms">
-    <StackLayout>
-        <!-- Day (Calendar) -->
-        <Label Text="Day" />
-        <DatePicker x:Name="dayPicker" />
 
-        <!-- Time (Clock) -->
-        <Label Text="Time" />
-        <TimePicker x:Name="timePicker" />
 
-        <!-- City -->
-        <Label Text="City" />
-        <Entry x:Name="cityEntry" Placeholder="Enter City" />
+        <Grid>
+            <Image Source="Images/bgiuhimodel.png"
+           Aspect="AspectFill"
+           VerticalOptions="FillAndExpand"
+           HorizontalOptions="FillAndExpand"/>
+            
+        <ScrollView>
 
-        <!-- Country -->
-        <Label Text="Country" />
-        <Entry x:Name="countryEntry" Placeholder="Enter Country" />
+            <StackLayout Spacing="30">
 
-        <!-- Transaction Type -->
-        <Label Text="Transaction Type" />
-        <Picker x:Name="transactionTypePicker">
-            <Picker.ItemsSource>
-                <x:Array Type="{x:Type x:String}">
-                    <x:String>Online</x:String>
-                    <x:String>Credit Card</x:String>
-                    <x:String>Mobile Payment</x:String>
-                </x:Array>
-            </Picker.ItemsSource>
-        </Picker>
+                <VerticalStackLayout                                                           
+                Spacing="5"                                                                 
+                Padding="30,0"                                                               
+                VerticalOptions="Center">
+                    
+                <!-- User -->
+                <Label Text="User" />
+                <Entry x:Name="userEntry" Placeholder="User"/>
 
-        <!-- Add a Button to submit the form -->
-        <Button Text="Submit" Clicked="OnSubmitButtonClicked" />
+                <!-- Card -->
+                <Label Text="Card" />
+                <Entry x:Name="cardEntry" Placeholder="Card"/>
 
-        <VerticalStackLayout
-            Spacing="80"
-            Padding="30,0"
-            VerticalOptions="Center">
-            <Label Text="" />
-            <Image Source="nikita.png"
-                SemanticProperties.Description="The dot net bot waving hello!"
+                <!-- Day (Calendar) -->
+                <Label Text="Day" />
+                <DatePicker x:Name="dayPicker" />
+
+                    <!-- Time (Clock) -->
+                <Label Text="Time" />
+                <TimePicker x:Name="timePicker" />
+
+                <!-- Amount -->
+                <Label Text="Amount" />
+                <Entry x:Name="amountEntry" Placeholder="Enter Amount" Keyboard="Numeric"/>
+
+                <!-- Use Chip -->
+                <Label Text="Use Chip" />
+                <Picker x:Name="usechipPicker">
+                    <Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>Chip Transaction</x:String>
+                            <x:String>Online Transaction</x:String>
+                            <x:String>Swipe Transaction</x:String>
+                        </x:Array>
+                    </Picker.ItemsSource>
+                </Picker>
+
+                <!-- Merchant Name (Calendar) -->
+                <Label Text="Merchant Name" />
+                <Entry x:Name="nameEntry" Placeholder="Enter Name"/>
+
+                    <!-- Merchant City -->
+                <!--<Label Text="Merchant City" />
+                <Entry x:Name="cityEntry" Placeholder="Enter City"/>-->
+
+                <!-- Merchant State -->
+                <!--<Label Text="Merchant State" />
+                <Entry x:Name="stateEntry" Placeholder="Enter State"/>-->
+
+                <!-- MCC -->
+                <Label Text="MCC" />
+                <Entry x:Name="mccEntry" Placeholder="Enter MCC" Keyboard="Numeric"/>
+
+                <!-- Errors? -->
+                
+                <Label Text="Errors" />
+                    <ListView x:Name="errorsListView" ItemsSource="{Binding Errors}" VerticalOptions="FillAndExpand" HasUnevenRows="True">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout Orientation="Horizontal" Padding="10">
+                                    <CheckBox IsChecked="{Binding IsSelected}" />
+                                    <Label Text="{Binding ErrorName}" VerticalOptions="Center" />
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+                
+                </VerticalStackLayout>
+
+                <!-- Add a Button to submit the form -->
+
+            <VerticalStackLayout Spacing="30" Padding="110,0" VerticalOptions="Center">
+                    <Button Text="Submit" Clicked="OnSubmitButtonClicked"
+                BackgroundColor="DarkOliveGreen" TextColor="DarkSeaGreen"
+                CornerRadius="5" FontSize="20" />
+
+                    <Image Source="nikita.png"                                                   
                 HeightRequest="256"/>
-        </VerticalStackLayout>
 
-    </StackLayout>
-
+            </VerticalStackLayout>
+       
+            </StackLayout>
+        </ScrollView>
+    </Grid>
 
 </ContentPage>
