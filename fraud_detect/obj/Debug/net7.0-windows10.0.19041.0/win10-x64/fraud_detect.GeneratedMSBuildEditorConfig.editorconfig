@@ -28,6 +28,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = fraud_detect.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
+[C:/Users/eyalw/source/repos/theHoodog/detection_fraude/fraud_detect/BackgroundCustom.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = fraud_detect.BackgroundCustom.xaml
+build_metadata.AdditionalFiles.TargetPath = BackgroundCustom.xaml
+build_metadata.AdditionalFiles.RelativePath = BackgroundCustom.xaml
+
 [C:/Users/eyalw/source/repos/theHoodog/detection_fraude/fraud_detect/Forms.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = fraud_detect.Forms.xaml

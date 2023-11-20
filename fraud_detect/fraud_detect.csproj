@@ -56,6 +56,9 @@
 	  <MauiXaml Update="AboutPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="BackgroundCustom.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Forms.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
