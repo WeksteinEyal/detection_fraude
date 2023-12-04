@@ -83,15 +83,13 @@ try:
     message = "The RNN process start"
     url = f"https://api.telegram.org/bot{TOKEN}/sendMessage?chat_id={chat_id}&text={message}"
     print(requests.get(url).json())
-    def create_model_RNN(units=64, units2=64, units3=64, dropout_rate=0.2, activation='sigmoid', dropout_rate2=0.2,
-                         activation2='sigmoid', dropout_rate3=0.2, activation3='sigmoid', optimizer='adam'):
+    def create_model_RNN(units=64, units2=64, units3=64, dropout_rate=0.2, activation='relu', optimizer='adam'):
         model = Sequential()
         model.add(SimpleRNN(units, input_shape=(1, X_train_scaled.shape[1]), activation=activation, return_sequences=True))
         model.add(Dropout(dropout_rate))
         model.add(SimpleRNN(units2, activation=activation, return_sequences=True))
         model.add(Dropout(dropout_rate))
         model.add(SimpleRNN(units3, activation=activation))
-        model.add(Dropout(dropout_rate))
         model.add(Dense(1, activation='sigmoid'))
         model.compile(loss='binary_crossentropy', optimizer=optimizer, metrics=['accuracy'])
         return model
@@ -100,8 +98,8 @@ try:
     
     param_grid = {
         'units': [8,16,32,64,128],
-        'units2': [0,8,16,32,64,128],
-        'units3': [0,8,16,32,64,128],
+        'units2': [8,16,32,64,128],
+        'units3': [8,16,32,64,128],
         'dropout_rate': [0.2, 0.3, 0.4],
         "activation": ['relu'],
         "optimizer": ['adam'],
@@ -180,9 +178,9 @@ try :
     model_LSTM = KerasClassifier(build_fn=create_model_LSTM, epochs=30, batch_size=64, verbose=1)
     
     param_grid = {
-        'units': [8,16,32,64,128],
-        'units2': [0,8,16,32,64,128],
-        'units3': [0,8,16,32,64,128],
+        'units': [8,16,32,64],
+        'units2': [8,16,32,64,128],
+        'units3': [8,16,32,64],
         'dropout_rate': [0.2,0.3],
         "activation": ['relu'],
         "optimizer": ['adam'],
@@ -259,8 +257,8 @@ try :
     
     param_grid_autoencoder = {
         'units': [32,64,128,256,512],
-        'units2': [0,8,16,32,64,128,256],
-        'units3': [0,8,16,32,64,128,256],
+        'units2': [8,16,32,64,128,256],
+        'units3': [8,16,32,64,128,256],
         'dropout_rate': [0.2,0.3],
         "activation": ['relu'],
         "optimizer": ['adam'],
