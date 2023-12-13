@@ -2,102 +2,112 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="fraud_detect.Forms"
-             Title="Forms">
+             BackgroundColor="Black">
 
+    <Grid>
+        <Image Source="Images/bgiuhimodel.png"
+               Aspect="AspectFill"
+               VerticalOptions="FillAndExpand"
+               HorizontalOptions="FillAndExpand"/>
 
-        <Grid>
-            <Image Source="Images/bgiuhimodel.png"
-           Aspect="AspectFill"
-           VerticalOptions="FillAndExpand"
-           HorizontalOptions="FillAndExpand"/>
-            
         <ScrollView>
+            <StackLayout Spacing="20" Padding="20">
 
-            <StackLayout Spacing="30">
+                <!-- Form Section -->
+                <StackLayout Spacing="5">
+                    <Grid>
+                        <Label Text="User  ⓘ" FontSize="16" TextColor="Ivory" Margin="15,0,0,0"/>
+                        <Button Text=" " FontSize="16" BackgroundColor="Transparent" TextColor="White" Clicked="UserOnInfoButtonClicked" Margin="-285,-15,0,0" />
+                    </Grid>
+                    <Border Stroke="Ivory" StrokeThickness="2">
+                        <Border.StrokeShape>
+                            <RoundRectangle CornerRadius="10,10,10,10" />
+                        </Border.StrokeShape>
+                        <Entry x:Name="userEntry" TextColor="Ivory" FontSize="16" Margin="0,0,0,5" />
+                    </Border>
 
-                <VerticalStackLayout                                                           
-                Spacing="5"                                                                 
-                Padding="30,0"                                                               
-                VerticalOptions="Center">
+                    <Grid>
+                        <Label Text="Card  ⓘ" FontSize="16" TextColor="Ivory" Margin="15,25,0,0"/>
+                        <Button Text=" " FontSize="16" BackgroundColor="Transparent" TextColor="White" Clicked="CardOnInfoButtonClicked" Margin="-285,10,0,0" />
+                    </Grid>
+                    <Border Stroke="Ivory" StrokeThickness="2">
+                        <Border.StrokeShape>
+                            <RoundRectangle CornerRadius="10,10,10,10" />
+                        </Border.StrokeShape>
+                        <Entry x:Name="cardEntry" TextColor="Ivory" Placeholder="" FontSize="16" Margin="0,0,0,5"/>
+                    </Border>
+
+                    <Grid>
+                        <Label Text="Year  ⓘ" FontSize="16" TextColor="Ivory" Margin="15,25,0,0"/>
+                        <Button Text=" " FontSize="16" BackgroundColor="Transparent" TextColor="White" Clicked="YearOnInfoButtonClicked" Margin="-290,10,0,0" />
+                    </Grid>
+                    <Border Stroke="Ivory" StrokeThickness="2">
+                        <Border.StrokeShape>
+                            <RoundRectangle CornerRadius="10,10,10,10" />
+                        </Border.StrokeShape>
+                        <DatePicker x:Name="yearPicker" TextColor="Ivory" Format="yyyy" FontSize="16" Margin="0,0,0,5"/>
+                    </Border>
+
+                    <Grid>
+                        <Label Text="Time  ⓘ" FontSize="16" TextColor="Ivory" Margin="15,25,0,0"/>
+                        <Button Text=" " FontSize="16" BackgroundColor="Transparent" TextColor="White" Clicked="TimeOnInfoButtonClicked" Margin="-285,10,0,0" />
+                    </Grid>
+                    <Border Stroke="Ivory" StrokeThickness="2">
+                        <Border.StrokeShape>
+                            <RoundRectangle CornerRadius="10,10,10,10" />
+                        </Border.StrokeShape>
+                        <TimePicker x:Name="timePicker" TextColor="Ivory" FontSize="16" Margin="0,0,0,5"/>
+                    </Border>
+
+
+                    <Grid>
+                        <Label Text="Amount  ⓘ" FontSize="16" TextColor="Ivory" Margin="15,25,0,0"/>
+                        <Button Text=" " FontSize="16" BackgroundColor="Transparent" TextColor="White" Clicked="AmountOnInfoButtonClicked" Margin="-235,10,0,0" />
+                    </Grid>
+                    <Border Stroke="Ivory" StrokeThickness="2">
+                        <Border.StrokeShape>
+                            <RoundRectangle CornerRadius="10,10,10,10" />
+                        </Border.StrokeShape>
+                        <Entry x:Name="amountEntry" TextColor="Ivory" Placeholder="" Keyboard="Numeric" FontSize="16" Margin="0,0,0,5"/>
+                    </Border>
                     
-                <!-- User -->
-                <Label Text="User" />
-                <Entry x:Name="userEntry" Placeholder="User"/>
 
-                <!-- Card -->
-                <Label Text="Card" />
-                <Entry x:Name="cardEntry" Placeholder="Card"/>
+                    <Grid>
+                        <Label Text="Merchant Name  ⓘ" FontSize="16" TextColor="Ivory" Margin="15,25,0,0"/>
+                        <Button Text=" " FontSize="16" BackgroundColor="Transparent" TextColor="White" Clicked="MerchantNameOnInfoButtonClicked" Margin="-115,10,0,0" />
+                    </Grid>
+                    <Border Stroke="Ivory" StrokeThickness="2">
+                        <Border.StrokeShape>
+                            <RoundRectangle CornerRadius="10,10,10,10" />
+                        </Border.StrokeShape>
+                        <Entry x:Name="nameEntry" TextColor="Ivory" Placeholder="" FontSize="16" Margin="0,0,0,5"/>
+                    </Border>
 
-                <!-- Day (Calendar) -->
-                <Label Text="Day" />
-                <DatePicker x:Name="dayPicker" />
+                    <Grid>
+                        <Label Text="MCC (Merchant Category Code)  ⓘ" FontSize="16" TextColor="Ivory" Margin="15,25,0,0"/>
+                        <Button Text=" " FontSize="16" BackgroundColor="Transparent" TextColor="White" Clicked="MCCOnInfoButtonClicked" Margin="115,10,0,0" />
+                    </Grid>
+                    <Border Stroke="Ivory" StrokeThickness="2">
+                        <Border.StrokeShape>
+                            <RoundRectangle CornerRadius="10,10,10,10" />
+                        </Border.StrokeShape>
+                        <Entry x:Name="mccEntry" TextColor="Ivory" Placeholder="" Keyboard="Numeric" FontSize="16" Margin="0,0,0,5"/>
+                    </Border>
+                    
+                </StackLayout>
 
-                    <!-- Time (Clock) -->
-                <Label Text="Time" />
-                <TimePicker x:Name="timePicker" />
-
-                <!-- Amount -->
-                <Label Text="Amount" />
-                <Entry x:Name="amountEntry" Placeholder="Enter Amount" Keyboard="Numeric"/>
-
-                <!-- Use Chip -->
-                <Label Text="Use Chip" />
-                <Picker x:Name="usechipPicker">
-                    <Picker.ItemsSource>
-                        <x:Array Type="{x:Type x:String}">
-                            <x:String>Chip Transaction</x:String>
-                            <x:String>Online Transaction</x:String>
-                            <x:String>Swipe Transaction</x:String>
-                        </x:Array>
-                    </Picker.ItemsSource>
-                </Picker>
-
-                <!-- Merchant Name (Calendar) -->
-                <Label Text="Merchant Name" />
-                <Entry x:Name="nameEntry" Placeholder="Enter Name"/>
-
-                    <!-- Merchant City -->
-                <!--<Label Text="Merchant City" />
-                <Entry x:Name="cityEntry" Placeholder="Enter City"/>-->
-
-                <!-- Merchant State -->
-                <!--<Label Text="Merchant State" />
-                <Entry x:Name="stateEntry" Placeholder="Enter State"/>-->
-
-                <!-- MCC -->
-                <Label Text="MCC" />
-                <Entry x:Name="mccEntry" Placeholder="Enter MCC" Keyboard="Numeric"/>
-
-                <!-- Errors? -->
-                
-                <Label Text="Errors" />
-                    <ListView x:Name="errorsListView" ItemsSource="{Binding Errors}" VerticalOptions="FillAndExpand" HasUnevenRows="True">
-                    <ListView.ItemTemplate>
-                        <DataTemplate>
-                            <ViewCell>
-                                <StackLayout Orientation="Horizontal" Padding="10">
-                                    <CheckBox IsChecked="{Binding IsSelected}" />
-                                    <Label Text="{Binding ErrorName}" VerticalOptions="Center" />
-                                </StackLayout>
-                            </ViewCell>
-                        </DataTemplate>
-                    </ListView.ItemTemplate>
-                </ListView>
-                
-                </VerticalStackLayout>
-
-                <!-- Add a Button to submit the form -->
-
-            <VerticalStackLayout Spacing="30" Padding="110,0" VerticalOptions="Center">
+                <!-- Submit Button -->
+                <Border Stroke="Black" StrokeThickness="15">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="10,10,10,10" />
+                    </Border.StrokeShape>
                     <Button Text="Submit" Clicked="OnSubmitButtonClicked"
-                BackgroundColor="DarkOliveGreen" TextColor="DarkSeaGreen"
-                CornerRadius="5" FontSize="20" />
+                        BackgroundColor="MediumPurple" TextColor="Ivory"
+                        CornerRadius="5" FontSize="22"/>
+                </Border>
+                <!-- Image Section -->
+                <Image Source="nikitaa.png" HeightRequest="128"/>
 
-                    <Image Source="nikita.png"                                                   
-                HeightRequest="256"/>
-
-            </VerticalStackLayout>
-       
             </StackLayout>
         </ScrollView>
     </Grid>

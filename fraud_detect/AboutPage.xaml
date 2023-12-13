@@ -11,7 +11,7 @@
 
         <VerticalStackLayout Spacing="10" Margin="10">
             <HorizontalStackLayout Spacing="10">
-                <Image Source="eyal.png"
+                <Image Source="eyall.png"
                SemanticProperties.Description="The dot net bot waving hello!"
                HeightRequest="128" />
                 <Label FontSize="22" FontAttributes="Bold" Text="Fraud Detector" VerticalOptions="End" />

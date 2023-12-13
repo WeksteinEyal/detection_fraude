@@ -50,6 +50,15 @@
 
 	<ItemGroup>
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
+		<PackageReference Include="Microsoft.ML" Version="3.0.0" />
+		<PackageReference Include="Microsoft.ML.OnnxRuntime" Version="1.16.3" />
+		<PackageReference Include="Microsoft.ML.OnnxRuntime.Managed" Version="1.16.3" />
+		<PackageReference Include="Microsoft.ML.OnnxTransformer" Version="3.0.0" />
+	</ItemGroup>
+	
+	<ItemGroup>
+		<AndroidLibrary Update="**\*.aar" Pack="false" />
+		<None Update="**\*.aar" Pack="true" PackagePath="lib\$(TargetFramework)$(TargetPlatformVersion)" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -62,6 +71,20 @@
 	  <MauiXaml Update="Forms.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="Resources\fraud_detection_lstm.onnx">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+	</ItemGroup>
+	<ItemGroup>
+		<None Include="Resources\rnn_test_3.onnx">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+	</ItemGroup>
+	<ItemGroup>
+	  <AndroidLibrary Update="C:\Users\eyalw\.nuget\packages\microsoft.ml.onnxruntime\1.16.3\buildTransitive\net6.0-android31.0\..\..\runtimes\android\native\onnxruntime.aar" Link="onnxruntime.aar" /> <!--Link="Resources\onnxruntime.aar"-->
 	</ItemGroup>
 
 </Project>
