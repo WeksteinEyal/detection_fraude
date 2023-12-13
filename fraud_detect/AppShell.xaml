@@ -14,7 +14,7 @@
             Icon="{OnPlatform 'icon_notes.png', iOS='icon_notes_ios.png', MacCatalyst='icon_notes_ios.png'}" />
 
         <ShellContent
-             Title="Analyze"
+             Title="Fraud detector"
              ContentTemplate="{DataTemplate local:Forms}"
              Icon="{OnPlatform 'icon_robot.png', iOS='icon_robot_ios.png', MacCatalyst='icon_robot_ios.png'}" />
 

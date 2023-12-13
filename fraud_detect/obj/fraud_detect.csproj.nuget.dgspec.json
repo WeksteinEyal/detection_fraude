@@ -80,6 +80,22 @@
               "target": "Package",
               "version": "[7.0.0, )"
             },
+            "Microsoft.ML": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.ML.OnnxRuntime": {
+              "target": "Package",
+              "version": "[1.16.3, )"
+            },
+            "Microsoft.ML.OnnxRuntime.Managed": {
+              "target": "Package",
+              "version": "[1.16.3, )"
+            },
+            "Microsoft.ML.OnnxTransformer": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
             "Microsoft.Maui.Graphics": {
               "target": "Package",
               "version": "[7.0.96, )",
@@ -193,6 +209,22 @@
               "target": "Package",
               "version": "[7.0.0, )"
             },
+            "Microsoft.ML": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.ML.OnnxRuntime": {
+              "target": "Package",
+              "version": "[1.16.3, )"
+            },
+            "Microsoft.ML.OnnxRuntime.Managed": {
+              "target": "Package",
+              "version": "[1.16.3, )"
+            },
+            "Microsoft.ML.OnnxTransformer": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
             "Microsoft.Maui.Graphics": {
               "target": "Package",
               "version": "[7.0.96, )",
@@ -250,6 +282,22 @@
             "Microsoft.Extensions.Logging.Debug": {
               "target": "Package",
               "version": "[7.0.0, )"
+            },
+            "Microsoft.ML": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.ML.OnnxRuntime": {
+              "target": "Package",
+              "version": "[1.16.3, )"
+            },
+            "Microsoft.ML.OnnxRuntime.Managed": {
+              "target": "Package",
+              "version": "[1.16.3, )"
+            },
+            "Microsoft.ML.OnnxTransformer": {
+              "target": "Package",
+              "version": "[3.0.0, )"
             },
             "Microsoft.Maui.Graphics": {
               "target": "Package",
@@ -309,6 +357,22 @@
             "Microsoft.Extensions.Logging.Debug": {
               "target": "Package",
               "version": "[7.0.0, )"
+            },
+            "Microsoft.ML": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.ML.OnnxRuntime": {
+              "target": "Package",
+              "version": "[1.16.3, )"
+            },
+            "Microsoft.ML.OnnxRuntime.Managed": {
+              "target": "Package",
+              "version": "[1.16.3, )"
+            },
+            "Microsoft.ML.OnnxTransformer": {
+              "target": "Package",
+              "version": "[3.0.0, )"
             },
             "Microsoft.Maui.Graphics": {
               "target": "Package",
