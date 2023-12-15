@@ -10,6 +10,6 @@ public partial class AboutPage : ContentPage
     private async void LearnMore_Clicked(object sender, EventArgs e)
     {
         // Navigate to the specified URL in the system browser.
-        await Launcher.Default.OpenAsync("https://theuselessweb.site/salmonofcapistrano/");
+        await Launcher.Default.OpenAsync("https://github.com/theHoodog/detection_fraude");
     }
 }
