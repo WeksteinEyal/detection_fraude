@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="fraud_detect.Forms"
-             BackgroundColor="Black">
+             BackgroundColor="#1f1d1b">
 
     <Grid>
         <Image Source="Images/bgiuhimodel.png"
@@ -97,7 +97,7 @@
                 </StackLayout>
 
                 <!-- Submit Button -->
-                <Border Stroke="Black" StrokeThickness="15">
+                <Border Stroke="#1f1d1b" StrokeThickness="15">
                     <Border.StrokeShape>
                         <RoundRectangle CornerRadius="10,10,10,10" />
                     </Border.StrokeShape>

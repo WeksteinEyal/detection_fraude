@@ -4,19 +4,58 @@ using Microsoft.ML;
 using Microsoft.ML.OnnxRuntime.Tensors;
 using Microsoft.ML.OnnxRuntime;
 using System.Globalization;
+using System.IO;
+
 
 //using Microsoft.ML.Transforms.Onnx;
 
 public partial class Forms : ContentPage
 {
+
     public Forms()
 	{
-        InitializeComponent();    
+        InitializeComponent();
     }
 
 
-    private void OnSubmitButtonClicked(object sender, EventArgs e)
+    async Task CompileModel(int f_user, int f_card, int f_year, int f_time, float f_amount, int f_name, int f_mcc)
     {
+
+        var onnxFilePath = Path.Combine(FileSystem.AppDataDirectory, "LocalCopy_model_fraud_detection.onnx");
+        using (var onnxStream = await FileSystem.OpenAppPackageFileAsync("model_fraud_detection.onnx"))
+        {
+            using (var fileStream = File.Create(onnxFilePath))
+            {
+                await onnxStream.CopyToAsync(fileStream);
+            }
+        }
+
+
+        //------Modele
+
+        int[] dimensions = new int[] { 1, 1, 7 };
+        var inputTensor = new DenseTensor<float>(new float[]
+        {
+                f_user, f_card, f_year, f_time, f_amount, f_name, f_mcc
+        }, dimensions);
+        var features_input = new List<NamedOnnxValue> { NamedOnnxValue.CreateFromTensor<float>("input_features", inputTensor) };
+        
+        var inferenceSession = new InferenceSession(onnxFilePath);
+        var sessionOutput = inferenceSession.Run(features_input);
+
+        var res = ((DenseTensor<float>)sessionOutput.Single().Value).ToArray();
+
+
+        float threshold = 0.5f;
+        string prediction = (res[0] > threshold) ? "Fraud" : "Regular";
+
+        //DisplayAlert("Result :", $"Classe prediction: {Math.Abs(Math.Round(res[0]))}\nType de transaction: {prediction}\nInfos developper (à supprimer pour le final) user : {f_user}, card :{f_card}, year :{f_year}, time :{f_time}, amount :{f_amount},  name :{f_name}, mcc :{f_mcc}", "Ok");
+        DisplayAlert("Results", $"\nTransaction type : {prediction}", "Exit");
+    }
+
+    private async void OnSubmitButtonClicked(object sender, EventArgs e)
+    {
+        Image image = new Image { Source = "dotnet_bot.png" };
         string user = userEntry.Text;
         string card = cardEntry.Text;
         string year = yearPicker.Date.ToString("yyyy");
@@ -25,7 +64,7 @@ public partial class Forms : ContentPage
         string name = nameEntry.Text;
         string mcc = mccEntry.Text;
         
-        System.Console.WriteLine($"User: {user}, Card: {card}, Year: {year}, Time: {time}, Amount: {amount}," +
+        Console.WriteLine($"User: {user}, Card: {card}, Year: {year}, Time: {time}, Amount: {amount}," +
             $"Name: {name}, MCC: {mcc}");
 
         //--PARTIE ONNX
@@ -76,28 +115,7 @@ public partial class Forms : ContentPage
         int f_card = labelMappingCard.ContainsKey(card) ? labelMappingCard[card] : -1;
         int f_name = labelMapping.ContainsKey(name) ? labelMapping[name] : -1;
 
-        //------Modele
-        var ONNXModelPath_ = @"C:\Users\eyalw\Desktop\Cours\Projet d'étude\Scripts\Try_model_for_c#\rnn_test_3.onnx";
-        var ONNXModelPath = "rnn_test_3.onnx";
-
-        int[] dimensions = new int[] { 1, 1, 7 };
-        var inputTensor = new DenseTensor<float>(new float[]
-        {
-                f_user, f_card, f_year, f_time, f_amount, f_name, f_mcc
-        }, dimensions);
-        var features_input = new List<NamedOnnxValue> { NamedOnnxValue.CreateFromTensor<float>("input_features", inputTensor) };
-
-        var inferenceSession = new InferenceSession(ONNXModelPath);
-        var sessionOutput = inferenceSession.Run(features_input);
-
-        var res = ((DenseTensor<float>)sessionOutput.Single().Value).ToArray();
-
-
-        float threshold = 0.5f;
-        string prediction = (res[0] > threshold) ? "Normale" : "Fraude";
-
-        DisplayAlert("Result :", $"Type de transaction: {prediction}\nRisque de fraude: {res[0]}\nInfos développer (à supprimer pour le final) user : {f_user}, amount :{f_amount}, card :{f_card}, year :{f_year}, mcc :{f_mcc}, name :{f_name}, time :{f_time}", "Ok");
-
+        await CompileModel(f_user, f_card, f_year, f_time, f_amount, f_name, f_mcc);
     }
 
     private void MCCOnInfoButtonClicked(object sender, EventArgs e)

@@ -1,1 +1,0 @@
-C:\Users\eyalw\source\repos\theHoodog\detection_fraude\fraud_detect\fraud_detect.csproj;x64

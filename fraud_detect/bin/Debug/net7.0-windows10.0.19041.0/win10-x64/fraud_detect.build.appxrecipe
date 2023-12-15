@@ -34,20 +34,20 @@
     <AppxPackagedFile Include="C:\Users\eyalw\source\repos\theHoodog\detection_fraude\fraud_detect\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\fraud_detect.dll">
       <PackagePath>fraud_detect.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\eyalw\source\repos\theHoodog\detection_fraude\fraud_detect\Resources\Raw\model_fraud_detection.onnx">
+      <PackagePath>model_fraud_detection.onnx</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\eyalw\source\repos\theHoodog\detection_fraude\fraud_detect\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>fraud_detect.exe</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\eyalw\source\repos\theHoodog\detection_fraude\fraud_detect\Resources\Raw\AboutAssets.txt">
+      <PackagePath>AboutAssets.txt</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\eyalw\.nuget\packages\microsoft.ml.onnxruntime\1.16.3\runtimes\win-x64\native\onnxruntime.dll">
       <PackagePath>onnxruntime.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\eyalw\.nuget\packages\microsoft.ml.onnxruntime\1.16.3\runtimes\win-x64\native\onnxruntime_providers_shared.dll">
       <PackagePath>onnxruntime_providers_shared.dll</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\eyalw\source\repos\theHoodog\detection_fraude\fraud_detect\Resources\fraud_detection_lstm.onnx">
-      <PackagePath>Resources\fraud_detection_lstm.onnx</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\eyalw\source\repos\theHoodog\detection_fraude\fraud_detect\Resources\rnn_test_3.onnx">
-      <PackagePath>Resources\rnn_test_3.onnx</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\eyalw\source\repos\theHoodog\detection_fraude\fraud_detect\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\fraud_detect.deps.json">
       <PackagePath>fraud_detect.deps.json</PackagePath>
@@ -619,6 +619,12 @@
     <AppxPackagedFile Include="C:\Users\eyalw\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.29\lib\net6.0\WinRT.Runtime.dll">
       <PackagePath>WinRT.Runtime.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\eyalw\.nuget\packages\communitytoolkit.maui\6.0.0\lib\net7.0-windows10.0.19041\CommunityToolkit.Maui.dll">
+      <PackagePath>CommunityToolkit.Maui.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\eyalw\.nuget\packages\communitytoolkit.maui.core\6.0.0\lib\net7.0-windows10.0.19041\CommunityToolkit.Maui.Core.dll">
+      <PackagePath>CommunityToolkit.Maui.Core.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\eyalw\.nuget\packages\google.protobuf\3.19.6\lib\net5.0\Google.Protobuf.dll">
       <PackagePath>Google.Protobuf.dll</PackagePath>
     </AppxPackagedFile>
@@ -742,6 +748,9 @@
     <AppxPackagedFile Include="C:\Users\eyalw\.nuget\packages\system.numerics.tensors\8.0.0\lib\net7.0\System.Numerics.Tensors.dll">
       <PackagePath>System.Numerics.Tensors.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\eyalw\.nuget\packages\system.speech\7.0.0\runtimes\win\lib\net7.0\System.Speech.dll">
+      <PackagePath>System.Speech.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\eyalw\.nuget\packages\microsoft.graphics.win2d\1.0.5.1\runtimes\win10-x64\native\Microsoft.Graphics.Canvas.dll">
       <PackagePath>Microsoft.Graphics.Canvas.dll</PackagePath>
     </AppxPackagedFile>
@@ -765,9 +774,6 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files\dotnet\packs\Microsoft.Maui.Core.Ref.win\7.0.96\ref\net7.0-windows10.0.19041\Microsoft.Maui.pri">
       <PackagePath>Microsoft.Maui.pri</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\eyalw\source\repos\theHoodog\detection_fraude\fraud_detect\Resources\Raw\AboutAssets.txt">
-      <PackagePath>AboutAssets.txt</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\eyalw\source\repos\theHoodog\detection_fraude\fraud_detect\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-100.png">
       <PackagePath>splashSplashScreen.scale-100.png</PackagePath>
@@ -987,6 +993,147 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\eyalw\source\repos\theHoodog\detection_fraude\fraud_detect\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\nikita.scale-100.png">
       <PackagePath>nikita.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\eyalw\source\repos\theHoodog\detection_fraude\fraud_detect\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\picon.ico">
+      <PackagePath>picon.ico</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\eyalw\source\repos\theHoodog\detection_fraude\fraud_detect\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\picon.scale-100.png">
+      <PackagePath>picon.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\eyalw\source\repos\theHoodog\detection_fraude\fraud_detect\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\piconLargeTile.scale-100.png">
+      <PackagePath>piconLargeTile.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\eyalw\source\repos\theHoodog\detection_fraude\fraud_detect\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\piconLargeTile.scale-125.png">
+      <PackagePath>piconLargeTile.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\eyalw\source\repos\theHoodog\detection_fraude\fraud_detect\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\piconLargeTile.scale-150.png">
+      <PackagePath>piconLargeTile.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\eyalw\source\repos\theHoodog\detection_fraude\fraud_detect\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\piconLargeTile.scale-200.png">
+      <PackagePath>piconLargeTile.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\eyalw\source\repos\theHoodog\detection_fraude\fraud_detect\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\piconLargeTile.scale-400.png">
+      <PackagePath>piconLargeTile.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\eyalw\source\repos\theHoodog\detection_fraude\fraud_detect\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\piconLogo.altform-lightunplated_targetsize-16.png">
+      <PackagePath>piconLogo.altform-lightunplated_targetsize-16.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\eyalw\source\repos\theHoodog\detection_fraude\fraud_detect\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\piconLogo.altform-lightunplated_targetsize-24.png">
+      <PackagePath>piconLogo.altform-lightunplated_targetsize-24.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\eyalw\source\repos\theHoodog\detection_fraude\fraud_detect\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\piconLogo.altform-lightunplated_targetsize-256.png">
+      <PackagePath>piconLogo.altform-lightunplated_targetsize-256.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\eyalw\source\repos\theHoodog\detection_fraude\fraud_detect\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\piconLogo.altform-lightunplated_targetsize-32.png">
+      <PackagePath>piconLogo.altform-lightunplated_targetsize-32.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\eyalw\source\repos\theHoodog\detection_fraude\fraud_detect\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\piconLogo.altform-lightunplated_targetsize-48.png">
+      <PackagePath>piconLogo.altform-lightunplated_targetsize-48.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\eyalw\source\repos\theHoodog\detection_fraude\fraud_detect\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\piconLogo.altform-unplated_targetsize-16.png">
+      <PackagePath>piconLogo.altform-unplated_targetsize-16.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\eyalw\source\repos\theHoodog\detection_fraude\fraud_detect\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\piconLogo.altform-unplated_targetsize-24.png">
+      <PackagePath>piconLogo.altform-unplated_targetsize-24.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\eyalw\source\repos\theHoodog\detection_fraude\fraud_detect\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\piconLogo.altform-unplated_targetsize-256.png">
+      <PackagePath>piconLogo.altform-unplated_targetsize-256.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\eyalw\source\repos\theHoodog\detection_fraude\fraud_detect\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\piconLogo.altform-unplated_targetsize-32.png">
+      <PackagePath>piconLogo.altform-unplated_targetsize-32.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\eyalw\source\repos\theHoodog\detection_fraude\fraud_detect\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\piconLogo.altform-unplated_targetsize-48.png">
+      <PackagePath>piconLogo.altform-unplated_targetsize-48.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\eyalw\source\repos\theHoodog\detection_fraude\fraud_detect\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\piconLogo.scale-100.png">
+      <PackagePath>piconLogo.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\eyalw\source\repos\theHoodog\detection_fraude\fraud_detect\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\piconLogo.scale-125.png">
+      <PackagePath>piconLogo.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\eyalw\source\repos\theHoodog\detection_fraude\fraud_detect\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\piconLogo.scale-150.png">
+      <PackagePath>piconLogo.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\eyalw\source\repos\theHoodog\detection_fraude\fraud_detect\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\piconLogo.scale-200.png">
+      <PackagePath>piconLogo.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\eyalw\source\repos\theHoodog\detection_fraude\fraud_detect\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\piconLogo.scale-400.png">
+      <PackagePath>piconLogo.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\eyalw\source\repos\theHoodog\detection_fraude\fraud_detect\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\piconLogo.targetsize-16.png">
+      <PackagePath>piconLogo.targetsize-16.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\eyalw\source\repos\theHoodog\detection_fraude\fraud_detect\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\piconLogo.targetsize-24.png">
+      <PackagePath>piconLogo.targetsize-24.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\eyalw\source\repos\theHoodog\detection_fraude\fraud_detect\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\piconLogo.targetsize-256.png">
+      <PackagePath>piconLogo.targetsize-256.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\eyalw\source\repos\theHoodog\detection_fraude\fraud_detect\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\piconLogo.targetsize-32.png">
+      <PackagePath>piconLogo.targetsize-32.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\eyalw\source\repos\theHoodog\detection_fraude\fraud_detect\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\piconLogo.targetsize-48.png">
+      <PackagePath>piconLogo.targetsize-48.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\eyalw\source\repos\theHoodog\detection_fraude\fraud_detect\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\piconMediumTile.scale-100.png">
+      <PackagePath>piconMediumTile.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\eyalw\source\repos\theHoodog\detection_fraude\fraud_detect\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\piconMediumTile.scale-125.png">
+      <PackagePath>piconMediumTile.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\eyalw\source\repos\theHoodog\detection_fraude\fraud_detect\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\piconMediumTile.scale-150.png">
+      <PackagePath>piconMediumTile.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\eyalw\source\repos\theHoodog\detection_fraude\fraud_detect\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\piconMediumTile.scale-200.png">
+      <PackagePath>piconMediumTile.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\eyalw\source\repos\theHoodog\detection_fraude\fraud_detect\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\piconMediumTile.scale-400.png">
+      <PackagePath>piconMediumTile.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\eyalw\source\repos\theHoodog\detection_fraude\fraud_detect\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\piconSmallTile.scale-100.png">
+      <PackagePath>piconSmallTile.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\eyalw\source\repos\theHoodog\detection_fraude\fraud_detect\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\piconSmallTile.scale-125.png">
+      <PackagePath>piconSmallTile.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\eyalw\source\repos\theHoodog\detection_fraude\fraud_detect\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\piconSmallTile.scale-150.png">
+      <PackagePath>piconSmallTile.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\eyalw\source\repos\theHoodog\detection_fraude\fraud_detect\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\piconSmallTile.scale-200.png">
+      <PackagePath>piconSmallTile.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\eyalw\source\repos\theHoodog\detection_fraude\fraud_detect\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\piconSmallTile.scale-400.png">
+      <PackagePath>piconSmallTile.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\eyalw\source\repos\theHoodog\detection_fraude\fraud_detect\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\piconStoreLogo.scale-100.png">
+      <PackagePath>piconStoreLogo.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\eyalw\source\repos\theHoodog\detection_fraude\fraud_detect\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\piconStoreLogo.scale-125.png">
+      <PackagePath>piconStoreLogo.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\eyalw\source\repos\theHoodog\detection_fraude\fraud_detect\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\piconStoreLogo.scale-150.png">
+      <PackagePath>piconStoreLogo.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\eyalw\source\repos\theHoodog\detection_fraude\fraud_detect\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\piconStoreLogo.scale-200.png">
+      <PackagePath>piconStoreLogo.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\eyalw\source\repos\theHoodog\detection_fraude\fraud_detect\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\piconStoreLogo.scale-400.png">
+      <PackagePath>piconStoreLogo.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\eyalw\source\repos\theHoodog\detection_fraude\fraud_detect\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\piconWideTile.scale-100.png">
+      <PackagePath>piconWideTile.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\eyalw\source\repos\theHoodog\detection_fraude\fraud_detect\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\piconWideTile.scale-125.png">
+      <PackagePath>piconWideTile.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\eyalw\source\repos\theHoodog\detection_fraude\fraud_detect\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\piconWideTile.scale-150.png">
+      <PackagePath>piconWideTile.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\eyalw\source\repos\theHoodog\detection_fraude\fraud_detect\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\piconWideTile.scale-200.png">
+      <PackagePath>piconWideTile.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\eyalw\source\repos\theHoodog\detection_fraude\fraud_detect\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\piconWideTile.scale-400.png">
+      <PackagePath>piconWideTile.scale-400.png</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

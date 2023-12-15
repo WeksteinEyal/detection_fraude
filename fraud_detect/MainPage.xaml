@@ -1,7 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="fraud_detect.MainPage">
+             xmlns:mct="clr-namespace:CommunityToolkit.Maui.Behaviors;assembly=CommunityToolkit.Maui"
+             x:Class="fraud_detect.MainPage"
+             BackgroundColor="#1f1d1b">
+
+    <Page.Behaviors>
+        <mct:StatusBarBehavior StatusBarColor="#1f1d1b" />
+    </Page.Behaviors>
 
     <Grid>
 
@@ -17,19 +23,21 @@
             VerticalOptions="Center">
 
                 <Image
-            Source="illann.png"
+            Source="appiconp.svg"
             SemanticProperties.Description="Cute dot net bot waving hi to you!"
             HeightRequest="400"
             HorizontalOptions="Center" />
 
                 <Label
             Text="Fraud detector"
+            TextColor="#dfd3c7"
             SemanticProperties.HeadingLevel="Level1"
             FontSize="32"
             HorizontalOptions="Center" />
 
                 <Label
             Text="AI based transactions analyzer"
+            TextColor="#dfd3c7"
             SemanticProperties.HeadingLevel="Level2"
             SemanticProperties.Description="Welcome to dot net Multi platform App U I"
             FontSize="18"
