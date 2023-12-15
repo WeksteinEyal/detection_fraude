@@ -1033,3 +1033,8 @@ C:\Users\eyalw\source\repos\theHoodog\detection_fraude\fraud_detect\obj\Debug\ne
 C:\Users\eyalw\source\repos\theHoodog\detection_fraude\fraud_detect\obj\Debug\net7.0-android\stamp\_GenerateJavaStubs.stamp
 C:\Users\eyalw\source\repos\theHoodog\detection_fraude\fraud_detect\obj\Debug\net7.0-android\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\eyalw\source\repos\theHoodog\detection_fraude\fraud_detect\obj\Debug\net7.0-android\stamp\_ResolveLibraryProjectImports.stamp
+C:\Users\eyalw\source\repos\theHoodog\detection_fraude\fraud_detect\obj\Debug\net7.0-android\resizetizer\r\drawable-hdpi\logoploooong.png
+C:\Users\eyalw\source\repos\theHoodog\detection_fraude\fraud_detect\obj\Debug\net7.0-android\resizetizer\r\drawable-mdpi\logoploooong.png
+C:\Users\eyalw\source\repos\theHoodog\detection_fraude\fraud_detect\obj\Debug\net7.0-android\resizetizer\r\drawable-xhdpi\logoploooong.png
+C:\Users\eyalw\source\repos\theHoodog\detection_fraude\fraud_detect\obj\Debug\net7.0-android\resizetizer\r\drawable-xxhdpi\logoploooong.png
+C:\Users\eyalw\source\repos\theHoodog\detection_fraude\fraud_detect\obj\Debug\net7.0-android\resizetizer\r\drawable-xxxhdpi\logoploooong.png
