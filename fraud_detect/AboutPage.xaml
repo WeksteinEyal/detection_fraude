@@ -12,9 +12,10 @@
 
         <VerticalStackLayout Spacing="10" Margin="10">
             <HorizontalStackLayout Spacing="10">
-                <Image Source="appiconp.svg"
+                <Button Text=" " Scale="0.4" HeightRequest="50" WidthRequest="520" FontSize="1" BackgroundColor="Transparent" TextColor="White" Clicked="Easter_egg_click" Margin="-150,0,0,0"/>
+                <Image Source="logoploooong.svg" Margin="-374,8,0,0"
                SemanticProperties.Description="The dot net bot waving hello!"
-               HeightRequest="128" />
+               HeightRequest="30" />
                 <Label FontSize="22" FontAttributes="Bold" Text="Fraud Detector" VerticalOptions="End" />
                 <Label FontSize="22" Text="v1.0" VerticalOptions="End" />
             </HorizontalStackLayout>
