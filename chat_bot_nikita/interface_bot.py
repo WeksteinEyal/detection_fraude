@@ -20,15 +20,16 @@ with open(r"jsonformatter.txt") as file:
 
 
 def chat():
+    timestamp = "5000_1709310489.792512"
     # load trained model
-    model = keras.models.load_model('chat_model')
+    model = keras.models.load_model(f'models/{timestamp}/chat_model')
 
     # load tokenizer object
-    with open('tokenizer.pickle', 'rb') as handle:
+    with open(f'models/{timestamp}/tokenizer.pickle', 'rb') as handle:
         tokenizer = pickle.load(handle)
 
     # load label encoder object
-    with open('label_encoder.pickle', 'rb') as enc:
+    with open(f'models/{timestamp}//label_encoder.pickle', 'rb') as enc:
         lbl_encoder = pickle.load(enc)
 
     # parameters

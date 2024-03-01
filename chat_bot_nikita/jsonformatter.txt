@@ -51,8 +51,8 @@
         "Who you are?"
       ],
       "responses": [
-        "I.m Joana, your bot assistant",
-        "I'm Joana, an Artificial Intelligent bot"
+        "I.m Freia, your bot assistant",
+        "I'm Freia, an Artificial Intelligent bot"
       ]
     },
     {
@@ -63,9 +63,9 @@
         "whats your name?"
       ],
       "responses": [
-        "You can call me Joana.",
-        "I'm Joana!",
-        "Just call me as Joana"
+        "You can call me Freia.",
+        "I'm Freia!",
+        "Just call me as Freia"
       ]
     },
     {
@@ -109,6 +109,371 @@
       "responses": [
         "Please provide us your complaint in order to assist you",
         "Please mention your complaint, we will reach you and sorry for any inconvenience caused"
+      ]
+    },
+    {
+      "tag": "reportfraud",
+      "patterns": [
+        "I want to report a fraudulent transaction", "Report fraud", "Unauthorized transaction.",
+        "I want to report a fraudulent charge on my account", "There's an unauthorized transaction I need to report", "Help! I think someone used my card without permission."
+      ],
+      "responses": [
+       "I'm sorry to hear that. Please provide details of the transaction for investigation."
+      ]
+    },
+    {
+      "tag": "fraudpreventiontips",
+      "patterns": [
+        "How can I prevent fraud", "Give me fraud prevention tips.",
+        "Share some tips to avoid falling victim to fraud", "How can I protect my account from unauthorized transactions", "What are the best practices to prevent fraud."
+      ],
+      "responses": [
+       "To prevent fraud, never share your PIN or personal information. Regularly check your account statements."
+      ]
+    },
+    {
+      "tag": "suspiciousactivity",
+      "patterns": [
+        "I noticed suspicious activity", "Strange transactions in my account.",
+        "I've noticed some strange transactions recently", "My account shows suspicious activity, what should I do", "Are there any red flags for identifying fraudulent transactions?"
+      ],
+      "responses": [
+       "I'm here to help. Please describe the suspicious activity, and we'll look into it."
+      ]
+    },
+    {
+      "tag": "cardcompromised",
+      "patterns": [
+        "I think my card is compromised", "Card security issue.",
+        "My card might be compromised, what steps should I take", "I'm concerned about the security of my credit card", "Help! I suspect my card has been compromised."
+      ],
+      "responses": [
+       "I'm sorry for the inconvenience. Let's secure your account. Have you contacted your bank?"
+      ]
+    },
+    {
+      "tag": "blockcard",
+      "patterns": [
+        "How to block my card", "Block my credit card.",
+        "Emergency! I need to block my card immediately", "Lost my card, how can I block it", "What's the procedure for blocking a credit card?"
+      ],
+      "responses": [
+        "To block your card, contact your bank immediately. They can assist you in securing your account."
+      ]
+    },
+    {
+      "tag": "refundfraudulentcharge",
+      "patterns": [
+        "How to get a refund for a fraudulent charge", "Unauthorized payment refund.",
+        "I need assistance in getting a refund for a fraudulent charge", "Someone made a purchase without my consent, can I get a refund", "How do I go about recovering funds from an unauthorized transaction?"
+      ],
+      "responses": [
+       "We understand your concern. Contact your bank to report the charge, and they'll guide you through the refund process."
+      ]
+    },
+    {
+      "tag": "phishingalerts",
+      "patterns": [
+        "How to identify phishing", "Phishing scams.",
+        "How can I recognize phishing emails", "Give me tips to identify phishing scams", "I'm worried about falling for phishing, what should I look out for?"
+      ],
+      "responses": [
+       "Be cautious of unexpected emails or links. Legitimate organizations won't ask for sensitive information via email."
+      ]
+    },
+    {
+      "tag": "identitytheft",
+      "patterns": [
+        "I'm worried about identity theft", "Protecting against identity theft.",
+        "What are the signs of identity theft", "I'm concerned about my personal information being stolen", "How can I protect myself from identity theft?"
+      ],
+      "responses": [
+       "Identity theft is a serious concern. Regularly check your credit reports and report any discrepancies."
+      ]
+    },
+    {
+      "tag": "transactionverification",
+      "patterns": [
+        "Can you verify a transaction", "Verify recent transactions.",
+        "I'd like to verify a recent transaction", "Verify the legitimacy of a payment", "Can you help me confirm a transaction on my account?"
+      ],
+      "responses": [
+       "Sure, please provide details of the transaction you'd like to verify in the forms tab of the app."
+      ]
+    },
+    {
+      "tag": "lostcardreport",
+      "patterns": [
+        "Lost my credit card", "Report lost card.",
+        "I've lost my credit card, what should I do", "My card is missing, how do I report it", "Emergency! I can't find my credit card anywhere."
+      ],
+      "responses": [
+       "I'm sorry to hear that. Report your lost card to your bank immediately to prevent unauthorized usage."
+      ]
+    },
+    {
+      "tag": "fraudalertsystem",
+      "patterns": [
+        "Tell me about your fraud alert system", "How does fraud detection work.",
+        "Tell me more about your system for detecting fraud", "How does the fraud alert system work", "What triggers the fraud detection system?"
+      ],
+      "responses": [
+       "Our fraud detection system is based on AI to detect any suspicious online transaction."
+      ]
+    },
+    {
+      "tag": "updatecontactinfo",
+      "patterns": [
+        "Update my contact information", "Change phone number for fraud alerts.",
+        "I need to update my contact information for fraud alerts", "How can I change the phone number for receiving fraud notifications", "Guide me through updating my contact details."
+      ],
+      "responses": [
+       "Ensure your contact information is up-to-date for timely fraud alerts. You can update it through your bank."
+      ]
+    },
+    {
+      "tag": "scamwarning",
+      "patterns": [ "Scam warning", "Common scams to be aware of.",
+        "Share some common scams I should be aware of", "What scams are prevalent right now", "I want to stay informed about the latest scams."
+      ],
+      "responses": [
+       "Be cautious of lottery scams, phishing emails, and requests for personal information. Report any suspicious activity."
+      ]
+    },
+    {
+      "tag": "accountfreeze",
+      "patterns": [
+        "Can I freeze my account", "Freeze my card temporarily.",
+        "Can I temporarily freeze my account", "What happens when I freeze my card", "Tell me about the process of freezing my account."
+      ],
+      "responses": [
+       "In case of suspected fraud, contact your bank to discuss freezing your account or card temporarily."
+      ]
+    },
+    {
+      "tag": "refundprocess",
+      "patterns": [
+        "Explain the refund process", "How long does a refund take.",
+        "Explain the steps involved in the refund process", "How long does it take to get a refund for a fraudulent charge", "What information do I need for the refund process?"
+      ],
+      "responses": [
+       "Refund processing times may vary. Contact your bank for specific details regarding your situation."
+      ]
+    },
+    {
+      "tag": "unrecognizedmerchant",
+      "patterns": [
+        "Transaction with unrecognized merchant", "Unknown charge on my statement.",
+        "I see a transaction from an unrecognized merchant, what should I do", "Unknown charge on my statement, help me understand", "How do I handle a transaction I don't recognize?"
+      ],
+      "responses": [
+       "If you don't recognize a transaction, report it to your bank. They can investigate and provide guidance."
+      ]
+    },
+    {
+      "tag": "accountcompromised",
+      "patterns": [
+        "I suspect my account is compromised", "Compromised account security.",
+        "I believe my account is compromised, what should I do", "Suspicious activity, could my account be compromised", "Emergency! I think someone has access to my account."
+      ],
+      "responses": [
+       "Securing your account is our priority. Report the issue to your bank for immediate assistance."
+      ]
+    },
+    {
+      "tag": "cardreplacement",
+      "patterns": [
+        "How to get a replacement card", "Replace my compromised card.",
+        "Guide me through the process of getting a replacement card", "Lost my card, how do I request a new one", "I need a replacement for my compromised card."
+      ],
+      "responses": [
+       "If your card is compromised, contact your bank for a replacement. They'll guide you through the process."
+      ]
+    },
+    {
+      "tag": "fraudnotificationpreferences",
+      "patterns": [
+        "Set fraud notification preferences", "Customize fraud alerts.",
+      "How can I customize my fraud notification preferences", "Tell me about the options for setting up fraud alerts", "Guide me through personalizing my fraud notifications."
+      ],
+      "responses": [
+       "You can customize your fraud notification preferences through your bank's online portal or mobile app."
+      ]
+    },
+    {
+      "tag": "typesoffraud",
+      "patterns": [
+        "What types of transaction frauds exist?",
+        "Can you list different types of fraudulent transactions?",
+        "Explain the common forms of transaction fraud."
+      ],
+      "responses": [
+        "Transaction fraud can take various forms, including credit card fraud, identity theft, phishing, account takeover, and counterfeit card usage. Each involves unauthorized access or use of financial information for malicious purposes."
+      ]
+    },
+    {
+      "tag": "definitionoffraud",
+      "patterns": [
+        "What is the definition of fraud?",
+        "Define transaction fraud.",
+        "Explain what constitutes fraud in financial transactions."
+      ],
+      "responses": [
+        "Fraud in financial transactions refers to intentional deception or misrepresentation for the purpose of financial gain. It involves activities such as false representation, unauthorized access, or manipulation of financial information to deceive individuals or institutions."
+      ]
+    },
+    {
+      "tag": "commonfraudindicators",
+      "patterns": [
+        "What are common indicators of transaction fraud?",
+        "How can I identify potential fraud in my transactions?",
+        "List signs that may indicate fraudulent activity in my accounts."
+      ],
+      "responses": [
+        "Common indicators of transaction fraud include unrecognized transactions, sudden changes in spending patterns, receiving unexpected emails requesting personal information, and unauthorized access to your accounts. It's essential to stay vigilant and report any suspicious activity to your bank."
+      ]
+    },
+    {
+      "tag": "impactoffraud",
+      "patterns": [
+        "What is the impact of transaction fraud?",
+        "How does fraud affect individuals and businesses?",
+        "Explain the consequences of falling victim to transaction fraud."
+      ],
+      "responses": [
+        "The impact of transaction fraud can be significant, leading to financial loss, damage to credit scores, and potential legal consequences. Additionally, it can cause emotional distress and inconvenience for individuals and businesses. Timely reporting and preventive measures are crucial to minimize the impact of fraud."
+      ]
+    },
+    {
+      "tag": "fraudpreventionstrategies",
+      "patterns": [
+        "What are effective strategies for preventing transaction fraud?",
+        "Share tips for safeguarding against fraudulent transactions.",
+        "How can individuals protect themselves from falling victim to fraud?"
+      ],
+      "responses": [
+        "Effective strategies for preventing transaction fraud include regularly monitoring account statements, securing personal information, enabling two-factor authentication, and staying informed about common scams. Additionally, being cautious of phishing attempts and promptly reporting suspicious activity to the bank can help mitigate the risk of fraud."
+      ]
+    },
+    {
+      "tag": "legalconsequencesoffraud",
+      "patterns": [
+        "What are the legal consequences of involvement in transaction fraud?",
+        "Explain the legal penalties for committing fraud.",
+        "What can happen if someone is caught engaging in fraudulent activities?"
+      ],
+      "responses": [
+        "Engaging in transaction fraud can result in severe legal consequences, including fines, imprisonment, and damage to one's criminal record. The specific penalties depend on the jurisdiction and the nature of the fraudulent activities. It's important to understand the legal ramifications and consequences associated with fraudulent behavior."
+      ]
+    },
+    {
+      "tag": "onlinefraudoverview",
+      "patterns": [
+        "Can you provide an overview of online fraud?",
+        "What is online fraud and how does it occur?",
+        "Explain the basics of online fraud."
+      ],
+      "responses": [
+        "Online fraud involves deceptive activities conducted over the internet with the intent to gain unauthorized access to personal or financial information. This can include phishing, identity theft, and various scams targeting online users."
+      ]
+    },
+    {
+      "tag": "phishingattacks",
+      "patterns": [
+        "How do phishing attacks contribute to online fraud?",
+        "Explain the concept of phishing in online fraud.",
+        "What are the dangers of falling victim to a phishing attack?"
+      ],
+      "responses": [
+        "Phishing attacks are a common form of online fraud where attackers use deceptive emails, messages, or websites to trick individuals into revealing sensitive information. Falling victim to a phishing attack can result in unauthorized access to accounts, identity theft, and financial loss."
+      ]
+    },
+    {
+      "tag": "secureonlinetransactions",
+      "patterns": [
+        "What measures can individuals take to secure online transactions?",
+        "How to ensure the security of online financial transactions?",
+        "Provide tips for safe online banking and shopping."
+      ],
+      "responses": [
+        "To secure online transactions, individuals should use secure and unique passwords, enable two-factor authentication, regularly update software and antivirus programs, and avoid clicking on suspicious links or sharing personal information online. Additionally, use secure and trusted websites for online transactions."
+      ]
+    },
+    {
+      "tag": "onlineshoppingfraudprevention",
+      "patterns": [
+        "How can I prevent online shopping fraud?",
+        "What precautions should I take when shopping online?",
+        "Share tips for safe online shopping to avoid fraud."
+      ],
+      "responses": [
+        "To prevent online shopping fraud, only use reputable and secure websites, ensure the website uses secure payment methods, regularly check your financial statements for unauthorized transactions, and be cautious of offers that seem too good to be true. Report any suspicious activity to your bank."
+      ]
+    },
+    {
+      "tag": "identitytheftonline",
+      "patterns": [
+        "How does identity theft occur online?",
+        "Explain the risks and methods of online identity theft.",
+        "What steps can individuals take to protect against online identity theft?"
+      ],
+      "responses": [
+        "Online identity theft occurs when attackers use stolen personal information, such as usernames and passwords, to impersonate individuals online. To protect against online identity theft, use strong, unique passwords, enable multi-factor authentication, and be cautious about sharing personal information on social media and other online platforms."
+      ]
+    },
+    {
+      "tag": "onlinefrauddetection",
+      "patterns": [
+        "How do banks and online platforms detect and prevent online fraud?",
+        "Explain the role of fraud detection systems in online transactions.",
+        "What measures are in place to identify and stop online fraud?"
+      ],
+      "responses": [
+        "Banks and online platforms employ sophisticated fraud detection systems that monitor user behavior, analyze transaction patterns, and utilize artificial intelligence to identify and prevent online fraud. These systems can detect anomalies and trigger alerts for further investigation to protect users from potential threats."
+      ]
+    },
+    {
+      "tag": "reportingonlinefraud",
+      "patterns": [
+        "What steps should I take if I suspect online fraud?",
+        "How to report online fraud to my bank?",
+        "Explain the process of reporting suspicious online activity."
+      ],
+      "responses": [
+        "If you suspect online fraud, immediately contact your bank to report the activity. They will guide you through the necessary steps, which may include freezing your accounts, changing passwords, and initiating an investigation to mitigate potential damage."
+      ]
+    },
+    {
+      "tag": "mobilebankingsecurity",
+      "patterns": [
+        "How can I ensure the security of mobile banking?",
+        "What measures should I take to protect my mobile banking transactions?",
+        "Provide tips for secure mobile banking."
+      ],
+      "responses": [
+        "To ensure the security of mobile banking, use secure and regularly updated banking apps, enable biometric authentication if available, avoid accessing banking information on public Wi-Fi, and set up transaction alerts to monitor account activity. Keep your mobile device's operating system and apps up-to-date for added security."
+      ]
+    },
+    {
+      "tag": "onlinefraudeducation",
+      "patterns": [
+        "Where can I find educational resources about online fraud prevention?",
+        "Recommend sources for learning more about online fraud and security.",
+        "Are there online courses or materials to educate myself about fraud prevention?"
+      ],
+      "responses": [
+        "There are various online resources, including educational websites, cybersecurity blogs, and online courses that provide valuable information about online fraud prevention. Many reputable organizations and financial institutions offer educational materials to help individuals enhance their knowledge and awareness of online security."
+      ]
+    },
+    {
+      "tag": "onlinescamalerts",
+      "patterns": [
+        "How can I stay informed about current online scams?",
+        "Are there alert systems for online scams?",
+        "Provide tips for staying updated on the latest online scams."
+      ],
+      "responses": [
+        "To stay informed about current online scams, regularly check official websites of cybersecurity organizations, subscribe to scam alert services, and be cautious of phishing emails or messages. Many cybersecurity agencies and financial institutions provide alerts and updates on emerging online scams to help users stay vigilant."
       ]
     }
   ]
