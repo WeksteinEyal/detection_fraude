@@ -14,6 +14,7 @@ from tensorflow.keras.layers import Dense, Embedding, GlobalAveragePooling1D
 from tensorflow.keras.preprocessing.text import Tokenizer
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 from sklearn.preprocessing import LabelEncoder
+from sklearn.model_selection import train_test_split
 
 with open(r"jsonformatter.txt") as file:
     data = json.load(file)
@@ -22,7 +23,6 @@ training_sentences = []
 training_labels = []
 labels = []
 responses = []
-
 
 for intent in data['intents']:
     for pattern in intent['patterns']:
@@ -34,7 +34,6 @@ for intent in data['intents']:
         labels.append(intent['tag'])
         
 num_classes = len(labels)
-
 
 lbl_encoder = LabelEncoder()
 lbl_encoder.fit(training_labels)
@@ -51,34 +50,34 @@ word_index = tokenizer.word_index
 sequences = tokenizer.texts_to_sequences(training_sentences)
 padded_sequences = pad_sequences(sequences, truncating='post', maxlen=max_len)
 
+# Split data into training and validation sets
+X_train, X_val, y_train, y_val = train_test_split(padded_sequences, np.array(training_labels), test_size=0.2, random_state=42)
 
 model = Sequential()
 model.add(Embedding(vocab_size, embedding_dim, input_length=max_len))
 model.add(GlobalAveragePooling1D())
-model.add(Dense(16, activation='relu'))
+model.add(Dense(32, activation='relu'))  # Increased units
 model.add(Dense(16, activation='relu'))
 model.add(Dense(num_classes, activation='softmax'))
 
-model.compile(loss='sparse_categorical_crossentropy', 
-              optimizer='adam', metrics=['accuracy'])
+model.compile(loss='sparse_categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
 
 model.summary()
 
-epochs = 500
-history = model.fit(padded_sequences, np.array(training_labels), epochs=epochs)
+# Increased epochs
+epochs = 5000
+history = model.fit(padded_sequences, np.array(training_labels), epochs=epochs, validation_split=0.2)
 
-# to save the trained model
-model.save("chat_model")
+# Save the trained model with a timestamp in the filename
+timestamp = tf.timestamp()
+model.save(f"models/{epochs}_{timestamp}/chat_model")
 
 import pickle
 
 # to save the fitted tokenizer
-with open('tokenizer.pickle', 'wb') as handle:
+with open(f'models/{epochs}_{timestamp}/tokenizer.pickle', 'wb') as handle:
     pickle.dump(tokenizer, handle, protocol=pickle.HIGHEST_PROTOCOL)
     
 # to save the fitted label encoder
-with open('label_encoder.pickle', 'wb') as ecn_file:
+with open(f'models/{epochs}_{timestamp}/label_encoder.pickle', 'wb') as ecn_file:
     pickle.dump(lbl_encoder, ecn_file, protocol=pickle.HIGHEST_PROTOCOL)
-    
-
-
