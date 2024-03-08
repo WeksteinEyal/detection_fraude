@@ -1,3 +1,4 @@
 2024/03/06 01:38:22 [notice] 24924#30484: signal process started
 2024/03/06 01:46:06 [notice] 27824#27372: signal process started
 2024/03/06 01:56:07 [notice] 24512#7468: signal process started
+2024/03/06 02:35:24 [error] 8348#27960: *9 CreateFile() "C:\Users\eyalw\Desktop\Cours\Study_Project\repo\detection_fraude\chat_bot_nikita\nginx-1.24.0/html/favicon.ico" failed (2: The system cannot find the file specified), client: 106.75.145.30, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "195.36.156.194"
