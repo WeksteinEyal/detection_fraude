@@ -94,8 +94,6 @@ def get_param(min_value, max_value, mean_target, num_samples):
         if iterations == max_iterations:
             alpha_value -= 0.1
         
-    print("Estimated alpha:", alpha_value)
-    print("Estimated beta:", beta_value)
     return alpha_value, beta_value
 
 def val(min_value, max_value, mean_target, num_samples):
