@@ -13,6 +13,9 @@ import random
 from flask import Flask, request, jsonify, send_file
 import json
 import os
+from tensorflow.keras.layers import Dense
+from tensorflow.keras.models import Sequential, load_model
+from sklearn.model_selection import train_test_split
 
 app = Flask(__name__)
 
@@ -85,26 +88,9 @@ def val(min_value, max_value, mean_target, num_samples):
     
     random_values = generate_decentered_beta_values(alpha_value, beta_value, min_value, max_value, num_samples)
     return random_values, alpha_value, beta_value
-
-UPLOAD_FOLDER = '/Test'  # Replace with the desired folder path to save CSV files
-app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
-
-@app.route('/upload_csv', methods=['POST'])
-def upload_csv():
-    try:
-        csv_data = request.get_data(as_text=True)
-        save_path = os.path.join(app.config['UPLOAD_FOLDER'], 'received_data.csv')
-
-        with open(save_path, 'w') as file:
-            file.write(csv_data)
-
-        return jsonify({'response': 'CSV data received and saved successfully'})
-    except Exception as e:
-        return jsonify({'error': str(e)})
     
 @app.route('/parameters', methods=['POST'])
 def parameters():
-    print('ICICICIIC')
     try:
         content = request.get_json()
 
@@ -122,7 +108,7 @@ def parameters():
         quantite_max_panier_client = float(content['quantite_max_panier_client'])
 
         # Progression de vente annuelle
-        croissance = float(content['croissance'])  # 5% de croissance annuelle en moyenne
+        croissance = 0.01 * float(content['croissance'])  # 5% de croissance annuelle en moyenne
         print(prix_article_max,prix_article_min,prix_article_moyen,prix_moyen_panier_clients,prix_min_panier_clients,prix_max_panier_clients,quantite_moyen_panier_client,quantite_min_panier_client,quantite_max_panier_client,croissance)
         croissance = (1 + croissance) ** (1 / 52) - 1 #Passage sur la croissance sur la semaine
 
@@ -207,16 +193,60 @@ def parameters():
 
         info = df_simulation.describe()
 
+        df_simulation = df_simulation[["Prix_Min_Article", "Prix_Max_Article", "Quantite_Article_Panier", "Prix_Total_Panier"]]
 
-        # Enregistrement du DataFrame au format CSV
-        df_simulation.to_csv('base_user.csv', index=False)
+        # On ne normalise pas les données car la normalisation fausse la normalisation du panier client par la suite et la detection est faussée
+        X_train, X_test, y_train, y_test = train_test_split(df_simulation, df_simulation, test_size=0.2, random_state=42)
 
-        print('Tout fonctionne !')
+        autoencoder = Sequential([
+            Dense(64, activation='relu', input_dim=X_train.shape[1]),
+            Dense(32, activation='relu'),
+            Dense(4, activation='sigmoid')
+        ])
+
+        autoencoder.compile(optimizer='adam', loss='mse')
+
+        autoencoder.fit(X_train, X_train, epochs=50, batch_size=32, shuffle=True, validation_data=(X_test, X_test))
+
+        predictions = autoencoder.predict(X_test)
+        mse = np.mean(np.power(X_test - predictions, 2), axis=1)
+
+        # Détermination du seuil d'anomalie (par exemple, en utilisant la moyenne + 2*écart-type des erreurs)
+        seuil_anomalie = np.mean(mse) + 2 * np.std(mse)
+        
+        file_path = "to_send/seuil_user.txt"
+        with open(file_path, "w") as file:
+            file.write(str(seuil_anomalie))
+
+        #Enregistrement du model
+        import tensorflow as tf
+        import tf2onnx
+        import onnx
+        input_signature = [tf.TensorSpec([None, 4], tf.float32, name='input_features')]
+        onnx_model, _ = tf2onnx.convert.from_keras(autoencoder, input_signature, opset=13)
+        onnx.save(onnx_model, "to_send/user_model.onnx")
+        
         return send_file(
-            'base_user.csv',
-            mimetype='text/csv',
+        "to_send/user_model.onnx",
+        mimetype='application/octet-stream',
+        as_attachment=True,
+        download_name='user_model.onnx',
+        )
+
+    except Exception as e:
+        print(str(e))
+
+        return jsonify({'error': str(e)})
+    
+@app.route('/seuil', methods=['POST'])
+def seuil():
+    try:
+        content = request.get_json()
+        return send_file(
+            "to_send/seuil_user.txt",
+            mimetype='text/plain',
             as_attachment=True,
-            download_name='base_user.csv'
+            download_name='seuil_user.txt'
         )
 
     except Exception as e:
