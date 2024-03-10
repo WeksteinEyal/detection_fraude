@@ -6,18 +6,21 @@ Created on Wed Mar  6 23:32:56 2024
 """
 
 from selenium import webdriver
-from selenium.webdriver.common.by import By
 from selenium.webdriver.edge.service import Service as EdgeService
+from selenium.webdriver.common.by import By
 import pandas as pd
+import time
+#driver = webdriver.Edge(service=EdgeService().install()))
 
-driver = webdriver.Edge(service=EdgeService())
+start_time = time.time()
+driver = webdriver.Edge()
 
 driver.get("https://whatismyipaddress.com/breach-check")
 
 agree = driver.find_element(By.CLASS_NAME, "css-47sehv")
 agree.click()
 
-e = 'xxxxxxxxxxxxxxxxxx@gmail.com'
+e = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx@gmail.com'
 
 email_input = driver.find_element(By.ID, "txtemail")
 email_input.send_keys(e)
@@ -48,4 +51,22 @@ for block in blocks:
 for c in df.columns:
     df[c] = df[c].apply(lambda x : x.split(':')[1])
 
+if len(df)== 0 :
+    print("This email is not on the list of data breach.")
+    
+else :
+    for k in range(len(df)):
+        print('###################################')
+        print('Company Name : ', df.loc[k, 'Company Name'])
+        print('Domain Name : ', df.loc[k, 'Domain Name'])
+        print('Date Breach : ', df.loc[k, 'Date Breach'])
+        print('Type Info : ', df.loc[k, "Type Info"])
+        print('Breach Overview :', df.loc[k, 'Breach Overview'])
+        print('Total Number Affected : ', df.loc[k, 'Total Number Affected'])
+        print('###################################\n')
+        
+driver.close()
 
+end_time = time.time()
+duration = end_time - start_time
+print(f"Execution time: {duration:.2f} seconds")
