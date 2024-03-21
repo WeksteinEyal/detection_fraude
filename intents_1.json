@@ -1,0 +1,314 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "How are you",
+        "Is anyone there?",
+        "Hello",
+        "Good day",
+        "Greetings",
+        "What's up"
+      ],
+      "responses": [
+        "Hey :-)",
+        "Hello, thanks for visiting",
+        "Hi there, what can I do for you?",
+        "Hi there, how can I help?",
+        "Greetings! How's it going?",
+        "Hello! Nice to see you.",
+        "Hi, how are you doing today?",
+        "Hey there, what's up?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [ "Bye", "See you later", "Goodbye", "Farewell", "Take care" ],
+      "responses": [
+        "See you later, thanks for visiting",
+        "Have a nice day",
+        "Bye! Come back again soon.",
+        "Farewell! It was nice talking to you.",
+        "Goodbye! Take care.",
+        "Until next time. Have a great day!",
+        "See you later, alligator!",
+        "Adios! Have a wonderful day."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [ "Thanks", "Thank you", "That's helpful", "Thank's a lot!", "Appreciate it", "Thanks a bunch" ],
+      "responses": [
+        "Happy to help!",
+        "Any time!",
+        "My pleasure",
+        "You're welcome!",
+        "Glad I could assist you.",
+        "No problem!",
+        "Thank you for reaching out.",
+        "Thanks a bunch!"
+      ]
+    },
+    {
+      "tag": "funny",
+      "patterns": [
+        "Tell me a joke!",
+        "Tell me something funny!",
+        "Do you know a joke?",
+        "Make me laugh",
+        "I could use a joke right now"
+      ],
+      "responses": [
+        "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
+        "What did the buffalo say when his son left for college? Bison.",
+        "Why don't scientists trust atoms? Because they make up everything!",
+        "What's a computer's favorite snack? Microchips!",
+        "Why don't skeletons fight each other? They don't have the guts!"
+      ]
+    },
+    {
+      "tag": "useform",
+      "patterns": [
+        "How to use the form?",
+        "Help me with the form.",
+        "How does the form work?",
+        "Can you guide me through the form?"
+      ],
+      "responses": [
+        "To use the form, you need to fill all the information according to the data. Make sure they are in the appropriate format. You can get all this information on your e-business platform account.",
+        "Sure, I can help you with the form. First, ensure all fields are filled correctly according to the provided data. If you have any specific questions, feel free to ask!",
+        "Using the form is easy! Just fill in all the required details as per the provided data. If you need assistance with a specific section, let me know!",
+        "I'd be happy to guide you through the form. Make sure to input the information accurately based on the data provided. If you have any questions along the way, feel free to ask."
+      ]
+    },
+    {
+      "tag": "appropriateformat",
+      "patterns": [
+        "What do you mean appropriate format?",
+        "What is the appropriate format?",
+        "What formats exist?",
+        "Tell me about the required format"
+      ],
+      "responses": [
+        "The formats are the following:\n- For the minimum, maximum, and mean, just put the corresponding values.\n- For the number of articles, it has to be an integer.\n- For the growth rate, please write 'like' in the example. For 12.5%, use '12.5'.\nPlease don't use any characters other than numbers.",
+        "When we say 'appropriate format,' we mean the specific way the information should be presented. For example, enter numerical values for minimum, maximum, and mean. The number of articles should be an integer, and for growth rate, follow the example provided.",
+        "Appropriate format refers to how you should input the information. For minimum, maximum, and mean, use the corresponding numerical values. The number of articles should be an integer, and for the growth rate, follow the example given, using numbers only.",
+        "The appropriate format is crucial. For minimum, maximum, and mean, use numerical values. Ensure the number of articles is an integer. When inputting the growth rate, follow the provided example. Avoid using any characters other than numbers."
+      ]
+    },
+    {
+      "tag": "apppurpose",
+      "patterns": [
+        "What is this app for?",
+        "What is the purpose of this app?",
+        "Why does this application exist?",
+        "Tell me about the app's purpose"
+      ],
+      "responses": [
+        "The fraud detection app was created as a final year project from engineering school. Its purpose is to help small sellers detect potential frauds over transactions.",
+        "This app serves as a fraud detection tool, initially developed as a final year project in engineering school. Its primary purpose is to assist small sellers in identifying potential fraud in their transactions.",
+        "The main purpose of this app is fraud detection. It originated as a final year project in engineering school with the aim of helping small sellers identify and prevent potential frauds in their transactions.",
+        "The app was created with a specific purpose – to assist small sellers in detecting potential frauds in their transactions. Its development began as a final year project in engineering school."
+      ]
+    },
+    {
+      "tag": "keepdata",
+      "patterns": [
+        "Do you store any data?",
+        "Do you keep my data?",
+        "I don't want my data to be saved",
+        "Is my data secured?",
+        "Tell me about data storage"
+      ],
+      "responses": [
+        "Your data isn't saved anywhere and stays completely confidential.",
+        "Rest assured, your data is not stored anywhere. It remains entirely confidential to ensure your privacy and security.",
+        "No need to worry; your data is not saved anywhere. It is treated with utmost confidentiality to ensure your privacy.",
+        "We do not store any of your data. Your information is kept confidential and secure, respecting your privacy."
+      ]
+    },
+    {
+      "tag": "mistakes",
+      "patterns": [
+        "How reliable are you?",
+        "Do you make mistakes?",
+        "Can I trust you?",
+        "Should I trust you?",
+        "Tell me about your reliability"
+      ],
+      "responses": [
+        "Never trust an AI. I'm a tool to help you identify potential fraud, but I can make mistakes. Be sure to double-check by yourself.",
+        "While I strive to assist you in identifying potential fraud, it's essential to remember that I'm just a tool. I can make mistakes, so always double-check independently.",
+        "Trust cautiously. I'm here to aid you in spotting potential fraud, but as an AI, I can make mistakes. It's wise to verify independently for added assurance.",
+        "I'm a helpful tool, but remember, never trust an AI completely. I can make mistakes. Always verify the information independently to ensure accuracy."
+      ]
+    },
+    {
+      "tag": "help",
+      "patterns": [
+        "Help me.",
+        "Can you help me?",
+        "I need assistance!",
+        "I need information.",
+        "Assist me"
+      ],
+      "responses": [
+        "Please type your request.",
+        "I'll try my best to answer.",
+        "How can I help you?",
+        "Hope I can help. Feel free to ask me a question about fraud and the app.",
+        "Certainly! Let me know how I can assist you."
+      ]
+    },
+    {
+      "tag": "frauddefinition",
+      "patterns": [
+        "What is fraud?",
+        "Explain what fraud is.",
+        "What do you mean by fraud?",
+        "Tell me about fraud"
+      ],
+      "responses": [
+        "Fraud is a deliberate deception or trickery carried out with the intent to gain an unfair or dishonest advantage, typically for financial gain. It involves the use of false information, misrepresentation, or deceit to manipulate individuals, organizations, or systems. Fraudulent activities can take various forms and occur in different contexts, including financial transactions, online interactions, identity theft, and more.",
+        "Fraud is a deliberate act of deception or trickery conducted with the goal of gaining an unfair or dishonest advantage, usually for financial gain. It encompasses the use of false information, misrepresentation, and deceit to manipulate individuals, organizations, or systems. Fraud can manifest in different forms across various contexts, including financial transactions, online interactions, and identity theft.",
+        "Fraud refers to a deliberate deception or trickery carried out with the intent to gain an unfair or dishonest advantage, typically for financial gain. It involves the use of false information, misrepresentation, or deceit to manipulate individuals, organizations, or systems. Fraudulent activities can occur in various contexts, such as financial transactions, online interactions, and identity theft.",
+        "Fraud is a deliberate deception or trickery carried out with the intent to gain an unfair or dishonest advantage, usually for financial gain. It involves the use of false information, misrepresentation, or deceit to manipulate individuals, organizations, or systems. Fraudulent activities can take different forms and may occur in various contexts, including financial transactions, online interactions, and identity theft."
+      ]
+    },
+    {
+      "tag": "onlinefraud",
+      "patterns": [
+        "What is online fraud?",
+        "What is the difference between fraud and online fraud?",
+        "Explain what online fraud is.",
+        "What do you mean by online fraud?"
+      ],
+      "responses": [
+        "Online fraud is a subgroup of frauds that occur through the web. It encompasses various deceptive activities, such as identity theft, stolen credit cards, and attempts to exploit vulnerabilities in online security systems.",
+        "Online fraud is a specialized category of fraud that takes place through the web. It involves deceptive activities, including identity theft, stolen credit cards, and efforts to exploit vulnerabilities in online security systems.",
+        "Online fraud is a subset of fraud that specifically occurs through the web. It includes deceptive activities like identity theft, stolen credit cards, and attempts to exploit vulnerabilities in online security systems.",
+        "When we talk about online fraud, we refer to fraudulent activities that take place on the web. This includes identity theft, stolen credit cards, and efforts to exploit vulnerabilities in online security systems."
+      ]
+    },
+    {
+      "tag": "onlinefraudtechnic",
+      "patterns": [
+        "How does online fraud work?",
+        "Which techniques of online fraud could be used?",
+        "Tell me about online fraud techniques."
+      ],
+      "responses": [
+        "Online fraud involves a range of illicit practices conducted in the digital realm. This can include fraudulent activities related to postal addresses, where scammers may use fake addresses to deceive individuals or organizations. It also encompasses the unauthorized use of stolen credit card information, where cybercriminals gain access to credit card details through various means, leading to unauthorized transactions and financial losses for the victims. In some cases, individuals may attempt to circumvent security checks by purchasing cheaper products to pass through credit card security measures. This tactic is used to make fraudulent transactions appear legitimate, posing a challenge for fraud detection systems. Techniques of fraud are always evolving continuously, and we are trying our best to adapt our system to this environment.",
+        "Online fraud involves a variety of illicit practices carried out in the digital space. This can include fraudulent activities related to postal addresses, where scammers use fake addresses to deceive individuals or organizations. Another aspect involves the unauthorized use of stolen credit card information, where cybercriminals gain access to credit card details through various means, resulting in unauthorized transactions and financial losses for the victims. In certain cases, individuals may try to bypass security checks by purchasing cheaper products to pass through credit card security measures, making fraudulent transactions appear legitimate. Techniques of fraud continually evolve, and we are actively adapting our system to this dynamic environment.",
+        "Online fraud encompasses a spectrum of illicit practices conducted in the digital realm. This may involve fraudulent activities related to postal addresses, where scammers use fake addresses to deceive individuals or organizations. Unauthorized use of stolen credit card information is also a common tactic, where cybercriminals gain access to credit card details through various means, leading to unauthorized transactions and financial losses for victims. In some instances, individuals may attempt to circumvent security checks by purchasing cheaper products to pass through credit card security measures, making fraudulent transactions appear legitimate. Techniques of fraud are continually evolving, and we strive to adapt our system to this ever-changing landscape.",
+        "Online fraud involves a range of illicit practices carried out in the digital domain. This includes fraudulent activities related to postal addresses, where scammers may use fake addresses to deceive individuals or organizations. Additionally, unauthorized use of stolen credit card information is prevalent, with cybercriminals gaining access to credit card details through various means, resulting in unauthorized transactions and financial losses for victims. In certain cases, individuals may try to bypass security checks by purchasing cheaper products to pass through credit card security measures, making fraudulent transactions appear legitimate. Techniques of fraud are always evolving, and we are committed to adapting our system to this dynamic environment."
+      ]
+    },
+    {
+      "tag": "certitude",
+      "patterns": [
+        "I am not sure about a transaction",
+        "Uncertain about a transaction",
+        "Doubtful about a purchase"
+      ],
+      "responses": [
+        "Our app is a way to get information to assist you in your decision-making process. The best approach is to directly inquire via email or phone with the customer to confirm their authenticity as the origin of the purchase.",
+        "If you're uncertain about a transaction, our app provides information to assist you in your decision-making process. It's recommended to directly inquire via email or phone with the customer to confirm their authenticity as the origin of the purchase.",
+        "Feeling unsure about a transaction? Our app offers information to help you in your decision-making. The best course of action is to directly inquire via email or phone with the customer to confirm their authenticity as the origin of the purchase.",
+        "If you're in doubt about a transaction, our app is designed to provide information to assist in your decision-making. Consider reaching out directly via email or phone to the customer to confirm their authenticity as the origin of the purchase."
+      ]
+    },
+    {
+      "tag": "victim",
+      "patterns": [
+        "I am a victim of fraud",
+        "Fraud victim",
+        "Report fraud",
+        "I encountered fraudulent activity"
+      ],
+      "responses": [
+        "Please report the buyer's information in the buyer information tab in the application to protect other sellers. Additionally, report to the police.",
+        "If you believe you are a victim of fraud, please report the buyer's information in the buyer information tab in the application. It helps protect other sellers. Don't forget to report the incident to the police.",
+        "If you've fallen victim to fraud, please report the buyer's information in the buyer information tab within the application. This helps safeguard other sellers. It's also crucial to report the incident to the police.",
+        "Sorry to hear that you've encountered fraudulent activity. Please report the buyer's information in the buyer information tab in the application to protect other sellers. Additionally, report the incident to the police."
+      ]
+    },
+    {
+      "tag": "stolencreditcardfraud",
+      "patterns": [
+        "Unauthorized credit card transaction",
+        "Report stolen credit card",
+        "Credit card fraud alert",
+        "What to do if my credit card is stolen?"
+      ],
+      "responses": [
+        "Stolen credit card fraud involves unauthorized use of credit card information for fraudulent transactions. If you suspect such activity, don't accept the transaction and report the buyer's information in the buyer information tab in the application to protect other sellers.",
+        "If you come across unauthorized credit card transactions, it might be a case of stolen credit card fraud. Do not accept the transaction and report the buyer's information in the buyer information tab in the application to protect other sellers.",
+        "If you suspect unauthorized credit card transactions, it could be a case of stolen credit card fraud. Decline the transaction and report the buyer's information in the buyer information tab in the application to safeguard other sellers.",
+        "Dealing with unauthorized credit card transactions? It might be stolen credit card fraud. Avoid accepting the transaction and report the buyer's information in the buyer information tab in the application to protect other sellers."
+      ]
+    },
+    {
+      "tag": "addressfraud",
+      "patterns": [
+        "Fake address in online purchase",
+        "Address verification scam",
+        "How to spot address fraud",
+        "Address manipulation in online transactions"
+      ],
+      "responses": [
+        "Address fraud involves the use of fake or manipulated addresses in online transactions. Be cautious when dealing with orders that seem to use questionable addresses, and report any suspicious activity to the appropriate authorities.",
+        "Scammers may employ address fraud to deceive individuals or organizations. Stay alert to unusual address patterns in online purchases, and report any concerns to the relevant parties for investigation.",
+        "Address verification scams can be a form of fraud. If you suspect address fraud in online transactions, take steps to verify the legitimacy of the information and report any discrepancies to prevent potential fraud.",
+        "Beware of address fraud, which entails the use of fake or manipulated addresses in online transactions. Exercise caution when processing orders with questionable addresses, and report any suspicious activity to the appropriate authorities for further investigation."
+      ]
+    },
+    {
+      "tag": "refundbeforereturnfraud",
+      "patterns": [
+        "Requesting a refund before returning the product",
+        "Refund scam warning",
+        "How to identify refund fraud",
+        "Online purchase refund policy"
+      ],
+      "responses": [
+        "Refund before returning the product can be a fraudulent tactic. Exercise caution when someone requests a refund before the product is returned. Verify the legitimacy of the request and follow the established refund policies.",
+        "Be aware of refund scams where individuals request a refund before returning the purchased item. It's essential to adhere to the standard refund procedures and report any suspicious requests to prevent fraud.",
+        "Fraudsters may attempt to exploit refund processes by requesting a refund before returning the product. Familiarize yourself with the online purchase refund policy and be cautious of any deviations from standard procedures.",
+        "Requesting a refund before returning the product? Be cautious, as it could be a fraudulent tactic. Verify the legitimacy of such requests and follow the established online purchase refund policy to prevent potential fraud."
+      ]
+    },
+    {
+      "tag": "unusualpurchasefraud",
+      "patterns": [
+        "Unusual purchase amount",
+        "Unexpected quantity in the shopping basket",
+        "Identify fraud with unusual purchase",
+        "Unusual order total"
+      ],
+      "responses": [
+        "Unusual purchase fraud may involve atypical order amounts or quantities in the shopping basket. Stay vigilant and review orders that seem out of the ordinary to prevent potential fraudulent transactions, and use our AI to check the basket.",
+        "If you notice unexpected quantities or unusually high/low purchase amounts in the shopping basket, it could be a sign of fraud. Investigate with the help of our AI to detect potential fraud, scrutinize such orders thoroughly, and take necessary precautions to ensure the legitimacy of the transaction.",
+        "Fraudsters may manipulate order quantities or amounts to carry out online fraud. Be proactive in identifying and flagging any unusual purchases, and implement additional verification steps to safeguard against fraudulent activities with our AI to detect potential fraud.",
+        "An unexpected total in the shopping basket may indicate fraudulent activity. Check the transaction with our AI. If you observe unusual purchase amounts or quantities, it's crucial to use our AI to detect potential fraud and take appropriate measures to ensure the transaction's legitimacy."
+      ]
+    },
+    {
+      "tag": "Databreach",
+      "patterns": [
+        "What is a data breach?",
+        "Explain data breach",
+        "Tell me about data breaches",
+        "Data breach definition"
+      ],
+      "responses": [
+        "A data breach occurs when cybercriminals hack into organizations' databases and steal sensitive information. The data, which is exposed to the public, can include passwords, account numbers, correspondence, names, home addresses, Social Security numbers, and more.",
+        "A data breach happens when cybercriminals infiltrate an organization's databases and extract sensitive information. The exposed data may include passwords, account numbers, correspondence, names, home addresses, Social Security numbers, and more.",
+        "In a data breach, cybercriminals hack into organizations' databases and extract sensitive information. This exposed data can include passwords, account numbers, correspondence, names, home addresses, Social Security numbers, and more.",
+        "A data breach is an unauthorized intrusion into an organization's databases by cybercriminals. Sensitive information, such as passwords, account numbers, correspondence, names, home addresses, Social Security numbers, and more, becomes exposed to the public."
+      ]
+    }
+  ]
+}
