@@ -224,7 +224,10 @@
       {
         "tag": "Databreach",
         "patterns": [
-          "What is a data breach ?"
+          "What is a data breach ?",
+          "How can a data breach occurs?",
+          "When does a data breach happen?",
+          "Tell me about data breach."
         ],
         "responses": [
           "A data breach occurs when cybercriminals hack into organizations databases and steal sensitive information. The data, which is exposed to the public, can include, passwords, account numbers, correspondence, names, home addresses, Social Security numbers and more."

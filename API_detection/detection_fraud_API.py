@@ -78,6 +78,9 @@ def parameters():
 
     autoencoder.fit(X_train, X_train, epochs=50, batch_size=32, shuffle=True, validation_data=(X_test, X_test))
 
+
+    
+
     predictions = autoencoder.predict(X_test)
     mse = np.mean(np.power(X_test - predictions, 2), axis=1)
 

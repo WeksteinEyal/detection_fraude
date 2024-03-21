@@ -6,21 +6,47 @@ Created on Wed Mar  6 23:32:56 2024
 """
 
 from selenium import webdriver
-from selenium.webdriver.edge.service import Service as EdgeService
 from selenium.webdriver.common.by import By
+from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.common.action_chains import ActionChains
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from selenium_stealth import stealth
+
 import pandas as pd
 import time
 #driver = webdriver.Edge(service=EdgeService().install()))
 
 start_time = time.time()
-driver = webdriver.Edge()
+from selenium.webdriver.chrome.options import Options
+
+# Set up Chrome options
+options = webdriver.ChromeOptions()
+options.add_argument("start-maximized")
+options.add_argument("--headless")
+options.add_experimental_option("excludeSwitches", ["enable-automation"])
+options.add_experimental_option('useAutomationExtension', False)
+driver = webdriver.Chrome(options=options)
+
+stealth(driver,
+        languages=["en-US", "en"],
+        vendor="Google Inc.",
+        platform="Win32",
+        webgl_vendor="Intel Inc.",
+        renderer="Intel Iris OpenGL Engine",
+        fix_hairline=True,
+        )
 
 driver.get("https://whatismyipaddress.com/breach-check")
+driver.get_screenshot_as_file("screen.png")
 
-agree = driver.find_element(By.CLASS_NAME, "css-47sehv")
-agree.click()
+agree = driver.find_elements(By.TAG_NAME, "button")
+driver.get_screenshot_as_file("screen2.png")
 
-e = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx@gmail.com'
+if len(agree) > 1:
+    agree[2].click()
+
+e = 'eyalrw@yahoo.fr'
 
 email_input = driver.find_element(By.ID, "txtemail")
 email_input.send_keys(e)
@@ -56,14 +82,13 @@ if len(df)== 0 :
     
 else :
     for k in range(len(df)):
-        print('###################################')
         print('Company Name : ', df.loc[k, 'Company Name'])
         print('Domain Name : ', df.loc[k, 'Domain Name'])
         print('Date Breach : ', df.loc[k, 'Date Breach'])
         print('Type Info : ', df.loc[k, "Type Info"])
         print('Breach Overview :', df.loc[k, 'Breach Overview'])
         print('Total Number Affected : ', df.loc[k, 'Total Number Affected'])
-        print('###################################\n')
+        print('###################################')
         
 driver.close()
 
