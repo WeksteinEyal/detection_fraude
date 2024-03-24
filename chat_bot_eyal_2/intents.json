@@ -6,15 +6,15 @@
         "Hi",
         "Hey",
         "How are you",
-        "Is anyone there?",
+        "Is anyone there",
         "Hello",
         "Good day"
       ],
       "responses": [
         "Hey :-)",
         "Hello, thanks for visiting",
-        "Hi there, what can I do for you?",
-        "Hi there, how can I help?"
+        "Hi there, what can I do for you",
+        "Hi there, how can I help"
       ]
     },
     {
@@ -36,19 +36,19 @@
       "patterns": [
         "Tell me a joke!",
         "Tell me something funny!",
-        "Do you know a joke?"
+        "Do you know a joke"
       ],
       "responses": [
-        "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
-        "What did the buffalo say when his son left for college? Bison."
+        "Why did the hipster burn his mouth He drank the coffee before it was cool.",
+        "What did the buffalo say when his son left for college Bison."
       ]
     },
     {
       "tag": "useform",
       "patterns": [
-        "How to use the form?",
+        "How to use the form",
         "Help me with the form.",
-        "How does the form work?"
+        "How does the form work"
       ],
       "responses": [
         "To use the form, you need to fill all the informations according to the data. Make sure they are in the appropriate format.You can get all this information on your e-business platform account."
@@ -57,9 +57,11 @@
     {
       "tag": "appropriateformat",
       "patterns": [
-        "What do you mean appropriate format?",
-        "What is the appropriate format?",
-        "What formats exist?"
+        "What do you mean appropriate format",
+        "What is the appropriate format",
+        "What formats exist",
+        "Explain the formats",
+        "How does the formats work"
       ],
       "responses": [
         "The formats are the following:\n- For the minimum, maximum, and mean, just put the corresponding values.\n- For the number of articles, it has to be an integer.\n- For the growth rate, please write 'like' in the example. For 12.5%, use '12.5'.\nPlease don't use any characters other than numbers."
@@ -68,21 +70,81 @@
     {
       "tag": "apppurpose",
       "patterns": [
-        "What is this app for?",
-        "What is the purpose of this app?",
-        "Why does this application exist?"
+        "What is this app for ",
+        "What is the purpose of this app ",
+        "Why does this application exist "
       ],
       "responses": [
         "The fraud detection app was created as a final year project from engineering school. Its purpose is to help small sellers to detect potential frauds over transactions."
       ]
     },
     {
+      "tag": "apphelp",
+      "patterns": [
+        "How do I use the app",
+        "How can I use the application ",
+        "can you help me with the app ",
+        "Please tell me how to use the application"
+      ],
+      "responses": [
+        "I can explain how the profile and fraud detector work together, or how you can use the tools in services."
+      ]
+    },
+    {
+      "tag": "profilehelp",
+      "patterns": [
+        "How do I fill the profile",
+        "What is the purpose of the profile",
+        "Do I need to complete the profile",
+        "Can you explain the profile"
+      ],
+      "responses": [
+        "The profile is necessary to build an AI able to detect frauds for your market. You have to fill all the informations. Click on the (i) icon over each field to get more informations about what to enter."
+      ]
+    },
+    {
+      "tag": "frauddetectorhelp",
+      "patterns": [
+        "What does the fraud detector do",
+        "How do I use the fraud detector",
+        "What is the purpose of the fraud detector ",
+        "Can you tell me fraud detector"
+      ],
+      "responses": [
+        "After completing your profile, you can use the fraud detector to check if one of your market's transaction was a fraud. You only have 4 fields to fill and you can get more information on them by clicking on the (i) icon over each field."
+      ]
+    },
+    {
+      "tag": "servicehelp",
+      "patterns": [
+        "What are the services",
+        "I don't understand the services ",
+        "What about the services ",
+        "How do I use the services",
+        "Can you explain the services"
+      ],
+      "responses": [
+        "You can use the services to report a buyer, or to check how many times he was reported. You can also use the email checker to know if an email was listed on a website recently victim of data leak."
+      ]
+    },
+    {
+      "tag": "emailchecker",
+      "patterns": [
+        "How do I use the emailchecker",
+        "What is the email checker used for ",
+        "Can you explain the email check"
+      ],
+      "responses": [
+        "Enter any email and we'll check if he was on a website victim of data leak. This can take a little time."
+      ]
+    },
+    {
       "tag": "keepdata",
       "patterns": [
-        "Do you store any data?",
-        "Do you keep my data?",
+        "Do you store any data",
+        "Do you keep my data",
         "I don't want my data to be saved",
-        "Is my data secured?"
+        "Is my data secured"
       ],
       "responses": [
         "Your data isn't saved anywhere and stays completely confidential."
@@ -91,10 +153,10 @@
     {
       "tag": "mistakes",
       "patterns": [
-        "How reliable are you?",
-        "Do you make mistakes?",
-        "Can I trust you?",
-        "Should I trust you?"
+        "How reliable are you",
+        "Do you make mistakes",
+        "Can I trust you",
+        "Should I trust you"
       ],
       "responses": [
         "Never trust an AI. I'm a tool to help you identify a potential fraud but I can make mistake. Be sure to double check by yourself."
@@ -104,35 +166,48 @@
       "tag": "help",
       "patterns": [
         "Help me.",
-        "Can you help me?",
+        "Can you help me",
         "I need assistance!",
         "I need an information."
       ],
       "responses": [
         "Please type your request.",
         "I'll try my best to answer.",
-        "How can I help you?",
+        "How can I help you",
         "Hope I can help, feel free to ask me a question about fraud and the app."
       ]
     },
     {
       "tag": "frauddefinition",
       "patterns": [
-        "What is fraud?",
+        "What is fraud",
         "Explain what a fraud is.",
-        "What do you mean by fraud?"
+        "What do you mean by fraud",
+        "What do you know about frauds"
       ],
       "responses": [
         "Fraud is a deliberate deception or trickery carried out with the intent to gain an unfair or dishonest advantage, typically for financial gain. It involves the use of false information, misrepresentation, or deceit to manipulate individuals, organizations, or systems. Fraudulent activities can take various forms and occur in different contexts, including financial transactions, online interactions, identity theft, and more."
       ]
     },
     {
+      "tag": "whatyouknow",
+      "patterns": [
+        "What do you know",
+        "What question can I ask you",
+        "How large is your knowledge"
+      ],
+      "responses": [
+        "I know a few things about frauds, and a few things about this app :)."
+      ]
+    },
+    {
       "tag": "onlinefraud",
       "patterns": [
-        "What is online fraud?",
-        "What is the difference between fraud and online fraud?",
+        "What is online fraud",
+        "What is the difference between fraud and online fraud",
         "Explain what an online fraud is.",
-        "What do you mean by online fraud?"
+        "What do you mean by online fraud",
+        "What do you know about online frauds"
       ],
       "responses": [
         "Online fraud is a subgroup of frauds that occur through the web. It encompasses various deceptive activities, such as identity theft, stolen credit cards, and attempts to exploit vulnerabilities in online security systems."
@@ -141,8 +216,8 @@
     {
       "tag": "onlinefraudtechnic",
       "patterns": [
-        "How an online fraud works ?",
-        "Which technique of online fraud could be use ? "
+        "How an online fraud works ",
+        "Which technique of online fraud could be use  "
       ],
       "responses": [
         "Online fraud involves a range of illicit practices conducted in the digital realm. This can include fraudulent activities related to :\n 1) Postal addresses, where scammers may use fake addresses to deceive individuals or organizations.\n 2) Unauthorized use of stolen credit card information. Cybercriminals may gain access to credit card details through various means, leading to unauthorized transactions and financial losses for the victims.\n 3) In some cases of online fraud, individuals may attempt to circumvent security checks by purchasing cheaper products to pass through credit card security measures. This tactic is used to make fraudulent transactions appear legitimate, posing a challenge for fraud detection systems.\n\nTechnics of fraude are always elvolve continuously,we are trying our best to adapt our system to this environment"
@@ -172,7 +247,7 @@
         "Unauthorized credit card transaction",
         "Report stolen credit card",
         "Credit card fraud alert",
-        "What to do if my credit card is stolen?"
+        "What to do if my credit card is stolen"
       ],
       "responses": [
         "Stolen credit card fraud involves unauthorized use of credit card information for fraudulent transactions. If you suspect such activity, dont accept the transaction and report the buyer informations in the buyer information tab in the application, to protect other seller."
@@ -224,9 +299,9 @@
     {
       "tag": "Databreach",
       "patterns": [
-        "What is a data breach ?",
-        "How can a data breach occurs?",
-        "When does a data breach happen?",
+        "What is a data breach ",
+        "How can a data breach occurs",
+        "When does a data breach happen",
         "Tell me about data breach."
       ],
       "responses": [
