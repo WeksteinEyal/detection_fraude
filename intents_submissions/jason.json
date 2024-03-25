@@ -1,0 +1,377 @@
+{
+    "intents": [
+        {
+            "tag": "greeting",
+            "patterns": [
+                "Hi",
+                "Hey",
+                "How are you?",
+                "Is anyone there?",
+                "Hello",
+                "Good day",
+                "Good morning",
+                "Good evening",
+                "What's up?"
+            ],
+            "responses": [
+                "Hey :-)",
+                "Hello, thanks for visiting",
+                "Hi there, what can I do for you?",
+                "Hi there, how can I help?"
+            ]
+        },
+        {
+            "tag": "goodbye",
+            "patterns": [
+                "Bye",
+                "See you later",
+                "Goodbye",
+                "Catch you later",
+                "I'm off",
+                "Talk to you later"
+            ],
+            "responses": [
+                "See you later, thanks for visiting",
+                "Have a nice day",
+                "Bye! Come back again soon."
+            ]
+        },
+        {
+            "tag": "thanks",
+            "patterns": [
+                "Thanks",
+                "Thank you",
+                "That's helpful",
+                "Thank's a lot!",
+                "Appreciate it",
+                "Thanks for the help"
+            ],
+            "responses": [
+                "Happy to help!",
+                "Any time!",
+                "My pleasure"
+            ]
+        },
+        {
+            "tag": "funny",
+            "patterns": [
+                "Tell me a joke!",
+                "Tell me something funny!",
+                "Do you know a joke?",
+                "Make me laugh",
+                "Got any good jokes?"
+            ],
+            "responses": [
+                "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
+                "What did the buffalo say when his son left for college? Bison."
+            ]
+        },
+        {
+            "tag": "fraud_detection_explanation",
+            "patterns": [
+                "How does the fraud detection work?",
+                "What is an autoencoder?",
+                "How do you detect unusual transactions?",
+                "Explain the fraud detection process",
+                "How is fraud identified in transactions?"
+            ],
+            "responses": [
+                "Our fraud detection app uses an autoencoder algorithm that learns to encode transactions based on their features, such as item prices and quantities. It then decodes this information to detect anomalies from the normal transaction pattern, flagging potential fraud.",
+                "The autoencoder helps in identifying transactions that significantly deviate from the typical patterns, using factors like unusual item quantities or price totals beyond normal thresholds."
+            ]
+        },
+        {
+            "tag": "fraud_alert_handling",
+            "patterns": [
+                "What happens when a fraud is detected?",
+                "How will I be notified of a possible fraud?",
+                "What should I do if my transaction is flagged as fraud?",
+                "Fraud detection protocol",
+                "Actions after fraud detection"
+            ],
+            "responses": [
+                "When potential fraud is detected, our system automatically alerts you through email or within the app. It's important to review the transaction details and confirm if it's legitimate or report it as fraudulent.",
+                "If your transaction is flagged, please verify the transaction details through our app or contact our support team for assistance."
+            ]
+        },
+        {
+            "tag": "fraud_detection_thresholds",
+            "patterns": [
+                "What are the thresholds for detecting fraud?",
+                "How do you set anomaly detection thresholds?",
+                "Can the fraud detection sensitivity be adjusted?",
+                "Setting fraud detection limits",
+                "Adjusting fraud alert sensitivity"
+            ],
+            "responses": [
+                "Fraud detection thresholds are set based on historical transaction data, including the average and standard deviation of transaction values and quantities. These thresholds help in identifying transactions that are unusually high or low.",
+                "While the sensitivity of the fraud detection system is carefully calibrated to balance false positives and negatives, adjustments can be made based on user feedback and evolving fraud trends."
+            ]
+        },
+        {
+            "tag": "user_role_in_fraud_detection",
+            "patterns": [
+                "Can I help improve fraud detection?",
+                "What can I do to make the app more accurate?",
+                "How does user feedback affect fraud detection?",
+                "Improving fraud detection system",
+                "Contribute to fraud detection accuracy"
+            ],
+            "responses": [
+                "User feedback is crucial for improving our fraud detection accuracy. By reporting false positives or unnoticed fraudulent transactions, you help us refine our detection algorithms.",
+                "Your input on flagged transactions helps our system learn and adjust, making it more efficient over time. We encourage users to review and provide feedback on alerts."
+            ]
+        },
+        {
+            "tag": "fraud_detection_data_security",
+            "patterns": [
+                "Is my data safe?",
+                "How do you protect my privacy while detecting fraud?",
+                "What data security measures are in place?",
+                "Data privacy in fraud detection",
+                "Security protocols for data protection"
+            ],
+            "responses": [
+                "We prioritize your privacy and data security. All data used for fraud detection is anonymized and encrypted, ensuring your information remains confidential. Moreover, we don't sotre any of your inforamtion on our servers.'",
+                "Our app employs state-of-the-art security measures to protect your data, including SSL encryption and secure data storage practices."
+            ]
+        },
+        {
+            "tag": "false_positives_and_negatives",
+            "patterns": [
+                "What happens if a transaction is wrongly flagged?",
+                "How does the app handle false alarms?",
+                "Can I dispute a fraud alert?",
+                "Dealing with incorrect fraud alerts",
+                "False positives in fraud detection"
+            ],
+            "responses": [
+                "If a transaction is wrongly flagged, you can easily dispute the alert through our app. This feedback is valuable and helps reduce false positives in the future.",
+                "We understand the inconvenience of false alarms and strive to minimize them. Your disputes are reviewed promptly, and corrections are made to improve detection accuracy."
+            ]
+        },
+        {
+            "tag": "updating_fraud_detection_models",
+            "patterns": [
+                "How often do you update the fraud detection system?",
+                "Do you regularly improve the fraud detection algorithms?",
+                "What's the process for updating your fraud detection capabilities?",
+                "Fraud detection system updates",
+                "Improving and updating fraud algorithms"
+            ],
+            "responses": [
+                "Our fraud detection models are continuously updated to adapt to new fraud trends and patterns. We integrate user feedback and the latest in AI research to enhance accuracy.",
+                "The update process involves analyzing transaction data, user feedback, and emerging fraud tactics to refine our algorithms. This ensures our system remains effective against the latest fraud techniques."
+            ]
+        },
+        {
+            "tag": "technical_support_for_fraud_issues",
+            "patterns": [
+                "Who can I contact for support with a fraud alert?",
+                "Is there technical support available for fraud detection issues?",
+                "How do I get help with a transaction flagged as fraud?",
+                "Support for fraud alert concerns",
+                "Assistance with flagged transactions"
+            ],
+            "responses": [
+                "For any support related to fraud alerts, please contact our dedicated support team available 24/7 through email, phone, or live chat in the app.",
+                "Our technical support team is ready to assist you with any questions or concerns regarding fraud alerts or flagged transactions. Don't hesitate to reach out."
+            ]
+        },
+        {
+            "tag": "enhancing_fraud_detection_accuracy",
+            "patterns": [
+                "How can I contribute to the accuracy of fraud detection?",
+                "What role do users play in improving detection?",
+                "Can I submit suggestions for improving fraud detection?",
+                "Helping improve fraud detection",
+                "User contributions to detection accuracy"
+            ],
+            "responses": [
+                "User contributions, such as validating alerts and submitting suggestions, play a vital role in enhancing the accuracy of our fraud detection. We welcome all feedback.",
+                "Your experiences and insights are invaluable for improving our system. You can submit suggestions through our app or directly to our customer support."
+            ]
+        },
+        {
+            "tag": "how_to_use_app",
+            "patterns": [
+                "How can I use the app?",
+                "What are the steps to start using the app?",
+                "Is it difficult to set up the fraud detection app?",
+                "Guide to app usage",
+                "Instructions for using the app"
+            ],
+            "responses": [
+                "Using the app is simple! Just sign up, input the maximum, minimum, and mean values of the products you sell, and you're ready to start. Enter any transaction details you want to check for fraud directly in the app.",
+                "Our app is designed to be user-friendly. After signing up, you'll be guided through the process of entering your product and transaction information. It's quick and easy!"
+            ]
+        },
+        {
+            "tag": "app_usefulness",
+            "patterns": [
+                "How is this app useful for me?",
+                "What benefits does the fraud detection app offer?",
+                "Why should I use this fraud detection app?",
+                "Advantages of using the app",
+                "How can the app benefit my business?"
+            ],
+            "responses": [
+                "Our app helps protect your business from fraudulent transactions by analyzing purchase patterns and flagging any that seem unusual. This can save you money and maintain your reputation among customers.",
+                "By using our fraud detection app, you gain peace of mind knowing that your transactions are being monitored for any potential fraud. It's an essential tool for any business operating online."
+            ]
+        },
+        {
+            "tag": "signing_up",
+            "patterns": [
+                "How do I sign up for the app?",
+                "What information is needed to register?",
+                "Can I start using the app right after signing up?",
+                "Creating an account on the app",
+                "Registration process for the app"
+            ],
+            "responses": [
+                "Signing up is easy! Just provide your email and create a password. We might ask for some basic information about your business to tailor the fraud detection to your needs.",
+                "After signing up and providing some initial business details, you can start using the app immediately. Our setup process is designed to get you up and running without delay."
+            ]
+        },
+        {
+            "tag": "transaction_check",
+            "patterns": [
+                "How do I check a transaction for fraud?",
+                "What details do I need to provide to analyze a transaction?",
+                "Is checking a transaction complicated?",
+                "Analyzing transactions for fraud",
+                "Process for reviewing transactions"
+            ],
+            "responses": [
+                "To check a transaction, simply enter its details into the app, including the price and quantity of items. Our system will analyze it based on the thresholds you've set and alert you if anything looks suspicious.",
+                "Checking a transaction is straightforward. You'll need to input the transaction's total price, item quantities, and any other relevant details you have. Our app takes care of the rest."
+            ]
+        },
+        {
+            "tag": "setting_thresholds",
+            "patterns": [
+                "How do I set the fraud detection thresholds?",
+                "Can I adjust the sensitivity of the fraud detection?",
+                "Where do I input my product's price and quantity limits?",
+                "Configuring fraud detection settings",
+                "Adjusting thresholds for fraud alerts"
+            ],
+            "responses": [
+                "You can set and adjust the fraud detection thresholds in the app settings. Input the maximum, minimum, and mean values for your products, which our system uses to spot anomalies.",
+                "Adjusting the sensitivity is easy. Just go to the settings section of our app, where you'll find options to set the price and quantity thresholds for your products. This helps tailor the fraud detection to your specific needs."
+            ]
+        },
+        {
+            "tag": "non_tech_friendly",
+            "patterns": [
+                "I'm not tech-savvy. Will I be able to use this app?",
+                "Is the app designed for someone without a technical background?",
+                "How user-friendly is the app for non-technical people?",
+                "Ease of use for non-tech users",
+                "App accessibility for beginners"
+            ],
+            "responses": [
+                "Absolutely! Our app is designed to be accessible for everyone, regardless of their technical background. We've focused on making the interface intuitive, and you'll be guided through each step.",
+                "You don't need to be tech-savvy to use our app. It's built with a straightforward, easy-to-navigate interface, ensuring that you can manage your fraud detection efforts without any hassle."
+            ]
+        },
+        {
+            "tag": "cost_of_app",
+            "patterns": [
+                "How much does the app cost?",
+                "Is there a subscription fee for the fraud detection app?",
+                "Are there any charges for using the app?",
+                "App pricing details",
+                "Subscription costs for the app"
+            ],
+            "responses": [
+                "Our app is free of charge of course ! "
+            ]
+        },
+        {
+            "tag": "compatibility",
+            "patterns": [
+                "Is the app compatible with my device?",
+                "Can I use the app on both iOS and Android devices?",
+                "What platforms does the fraud detection app support?",
+                "Device compatibility for the app",
+                "Supported platforms and devices"
+            ],
+            "responses": [
+                "Our app is available on Android platforms, with iOS compatibility coming later this year.",
+                "We've designed the app to work seamlessly across multiple platforms, including web browsers, for maximum accessibility."
+            ]
+        },
+        {
+            "tag": "privacy_concerns",
+            "patterns": [
+                "How do you ensure my data's privacy?",
+                "What measures are in place to protect personal information?",
+                "Can I trust the app with sensitive transaction data?",
+                "Privacy policy for user data",
+                "Protecting personal information in the app"
+            ],
+            "responses": [
+                "Data privacy is our top priority. We use advanced encryption and follow strict privacy policies to ensure your information is always protected. We don't store even store your information or the information about the transaction on our servers.'",
+                "Your trust is important to us. We adhere to rigorous data protection standards, including GDPR, to safeguard your transaction data and personal information."
+            ]
+        },
+        {
+            "tag": "accuracy_of_fraud_detection",
+            "patterns": [
+                "How accurate is the fraud detection?",
+                "Do false positives occur often in the app?",
+                "Can I rely on the app's fraud detection algorithms?",
+                "Reliability of fraud detection",
+                "Accuracy and effectiveness of fraud alerts"
+            ],
+            "responses": [
+                "Our fraud detection algorithms are highly accurate, utilizing the latest AI technologies. While no system is perfect, we constantly work to minimize false positives and negatives.",
+                "You can trust our app to provide reliable fraud detection. We continuously update our algorithms based on new data and user feedback to enhance accuracy."
+            ]
+        },
+        {
+            "tag": "learning_from_mistakes",
+            "patterns": [
+                "Does the app learn from its mistakes?",
+                "How does the app improve over time?",
+                "Will the fraud detection get better with more use?",
+                "Machine learning in fraud detection",
+                "Continuous improvement of the app"
+            ],
+            "responses": [
+                "Absolutely! Our app uses machine learning to adapt and improve from every transaction it analyzes, including any mistakes, ensuring better accuracy over time.",
+                "Yes, the more you use the app, the smarter it gets. Our algorithms adjust based on feedback and new patterns, continually enhancing our fraud detection capabilities."
+            ]
+        },
+        {
+            "tag": "reporting_fraud",
+            "patterns": [
+                "How do I report a fraudulent transaction?",
+                "What steps should I take if I detect fraud?",
+                "Is there a way to report suspicious activity through the app?",
+                "Reporting fraud in the app",
+                "Action steps for suspected fraud"
+            ],
+            "responses": [
+                "If you suspect a fraudulent transaction, you can report it directly through the app. Our team will investigate promptly and take necessary actions.",
+                "Reporting suspicious activity is straightforward. Use the 'Report Fraud' feature in the app, and we'll handle the rest, ensuring your business stays protected."
+            ]
+        },
+        {
+            "tag": "customer_support",
+            "patterns": [
+                "What kind of customer support do you offer?",
+                "How can I get help if I encounter problems with the app?",
+                "Is there live support available?",
+                "Contacting customer service",
+                "Support options for app users"
+            ],
+            "responses": [
+                "We offer comprehensive customer support, including live chat, email, and phone assistance. Our team is here to help you with any issues or questions you might have.",
+                "Our customer support is available 24/7 through various channels. Whether you prefer live chat, email, or phone, we're ready to assist you."
+            ]
+        }
+    ]
+}
