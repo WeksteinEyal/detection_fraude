@@ -8,8 +8,7 @@ This project was initiated as part of the master projects at ESME Paris, a Frenc
 ## Index
 - [Getting Started](#getting-started) : To quickly understand how to use the tool.
 - [Usage documentation](#usage-documentation) : To get all the details.
-- [Functions documentation](#functions-documentation.md) : To understand all the functions used in the different scripts.
-- [Variables catalog](#variables-catalog.md) : To understand all the variables used in the different scripts.
+- [Download links](#download) : To download the app.
 ## Getting Started
 One can use the [Fraud detector](#fraud-detector) after filling and sending its e-commerce informations from the [Profile](#profile) tab. These pieces of information are utilized to construct an AI model tailored to the user's e-commerce needs, capable of detecting any abnormal transactions. Data is not stored, and the model is saved on the user's device. This step requires an internet connection. Subsequently, the user can utilize the fraud detector without internet by inputting information from a suspicious transaction.
 
