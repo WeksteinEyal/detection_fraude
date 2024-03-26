@@ -18,7 +18,8 @@ From the [Services](#services) tab, the user can also verify if an email is list
 
 ## Usage documentation
 ### Profile
-[img][img]
+![Profile top](https://github.com/theHoodog/detection_fraude/assets/profile_top.jpeg?raw=true) ![Profile bottom](https://github.com/theHoodog/detection_fraude/assets/profile_bottom.jpeg?raw=true)
+
 
 The entry point of the fraud detector. Here, the user enters their e-commerce information to subsequently create a fraud detection model tailored to their market. This step is necessary to use the fraud detector and requires an internet connection.
 
