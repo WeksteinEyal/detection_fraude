@@ -66,6 +66,6 @@ This collaborative report system purpose is to report and check suspicious custo
 ## Download
 Unfortunately, despite having an IOS and MacOS compatibility and since we didn't upload on any store, the app currently cannot be used on IOS and MacOS.
 ### Android
-download link
+[download link](https://drive.google.com/uc?export=download&id=1XQemmjEuXos2Xmqmf5R95DmGLZrVY8ny)
 ### Windows
 download link
