@@ -66,9 +66,9 @@ This collaborative report system purpose is to report and check suspicious custo
 ## Download
 Unfortunately, despite having an IOS and MacOS compatibility and since we didn't upload on any store, the app currently cannot be used on IOS and MacOS.
 ### Android
-[download link](https://drive.google.com/uc?export=download&id=1XQemmjEuXos2Xmqmf5R95DmGLZrVY8ny)
+[download link](https://drive.google.com/uc?export=download&id=1Rf_cqEEIspfsSDNWcY4MLHr016_C7RwI)
 ### Windows
-[download link](https://drive.google.com/uc?export=download&id=1rAbN21pdZ9p9c7ExcVsFMr-gRavDKo9F)
+[download link](https://drive.google.com/uc?export=download&id=1joEPXb3MOEKN5G9aDT22bvMbUvYnoYfL)
 
 To install Fraud Block on your windows machine :
 
