@@ -69,3 +69,18 @@ Unfortunately, despite having an IOS and MacOS compatibility and since we didn't
 [download link](https://drive.google.com/uc?export=download&id=1XQemmjEuXos2Xmqmf5R95DmGLZrVY8ny)
 ### Windows
 [download link](https://drive.google.com/uc?export=download&id=1rAbN21pdZ9p9c7ExcVsFMr-gRavDKo9F)
+
+To install Fraud Block on your windows machine :
+<img src="assets/install_fraudblock_1.png" alt="install 1" width="150" height="auto">
+<img src="assets/install_fraudblock_2.png" alt="install 2" width="150" height="auto">
+<img src="assets/install_fraudblock_3.png" alt="install 3" width="150" height="auto">
+<img src="assets/install_fraudblock_4.png" alt="install 4" width="150" height="auto">
+<img src="assets/install_fraudblock_5.png" alt="install 5" width="150" height="auto">
+<img src="assets/install_fraudblock_6.png" alt="install 6" width="150" height="auto">
+<img src="assets/install_fraudblock_7.png" alt="install 7" width="150" height="auto">
+<img src="assets/install_fraudblock_8.png" alt="install 8" width="150" height="auto">
+<img src="assets/install_fraudblock_9.png" alt="install 9" width="150" height="auto">
+<img src="assets/install_fraudblock_10.png" alt="install 10" width="150" height="auto">
+<img src="assets/install_fraudblock_11.png" alt="install 11" width="150" height="auto">
+<img src="assets/install_fraudblock_12.png" alt="install 12" width="150" height="auto">
+
