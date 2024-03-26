@@ -19,20 +19,50 @@ From the [Services](#services) tab, the user can also verify if an email is list
 
 ## Usage documentation
 ### Profile
+[img][img]
+
+The entry point of the fraud detector. Here, the user enters their e-commerce information to subsequently create a fraud detection model tailored to their market. This step is necessary to use the fraud detector and requires an internet connection.
+
+Here is an exhaustive list of all the required fields. All values are numericals and can be integers or decimals.
+|Field|Description|
+|---|---|
+|Average item price|The average price for all the different items for sale|
+|Minimum item price|The least expensive item for sale|
+|Maximum item price|The most expensive item for sale|
+|Average basket price|The average basket price from all the different sells made|
+|Minimum basket price|The least expensive basket sold|
+|Maximum basket price|The most expensive basket sold|
+|Average basket quantity|The average quantity of items per basket from all the different sells made|
+|Minimum basket quantity|The smallest quantity of items sold|
+|Maximum basket quantity|The biggest quantity of items sold|
+|Growth rate %|The e-commerce growth rate in % (yearly)|
 
 ### Fraud detector
+[img]
+
+After submitting their market profile, the user can fill in the following fields to check whether a transaction is potentially fraudulent or not. Doesn't require an internet connection.
+|Field|Description|
+|---|---|
+|Minimum item price|The least expensive item in the customer's basket|
+|Maximum item price|The most expensive item in the customer's basket|
+|Quantity in basket|The amount of items in the customer's basket|
+|Total price basket|The total amount paid by the customer for this basket|
 
 ### ChatBot
+[img]
+
+The ChatBot has been trained to answer questions about the app and on the topic of frauds. It only works in English and is not a generative chatbot (such as ChatGPT). It means that you can submit a question without worrying about the reliability of the response. All answers have been drafted and approved by the team. The ChatBot requires an internet connection.
 
 ### Services
 
+[img]
+
+The services are additional tools to verify if a customer is suspicious. It is a good practice to use them if a potential fraud has been detected.
 #### Email checker
+This tool is used to verify if an email is listed on a website that has experienced a data breach. The user can then view all relevant sites, the date of the data breach, the number of leaked data, and a description of the incident. It requires an internet connection and is powered by [whatismyipaddress](https://whatismyipaddress.com/).
 
 #### Report system
-
-## Functions documentation
-
-## Variables catalog
+This collaborative report system purpose is to report and check suspicious customers, using the billing address informations (name, forename, address).
 
 ## Download
 Unfortunately, despite having an IOS and MacOS compatibility and since we didn't upload on any store, the app currently cannot be used on IOS and MacOS.
