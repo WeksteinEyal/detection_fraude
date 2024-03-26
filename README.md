@@ -68,4 +68,4 @@ Unfortunately, despite having an IOS and MacOS compatibility and since we didn't
 ### Android
 [download link](https://drive.google.com/uc?export=download&id=1XQemmjEuXos2Xmqmf5R95DmGLZrVY8ny)
 ### Windows
-download link
+[download link](https://drive.google.com/uc?export=download&id=1rAbN21pdZ9p9c7ExcVsFMr-gRavDKo9F)
