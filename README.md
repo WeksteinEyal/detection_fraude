@@ -18,7 +18,7 @@ From the [Services](#services) tab, the user can also verify if an email is list
 
 ## Usage documentation
 ### Profile
-![Profile top](https://github.com/theHoodog/detection_fraude/assets/profile_top.jpeg?raw=true) ![Profile bottom](https://github.com/theHoodog/detection_fraude/assets/profile_bottom.jpeg?raw=true)
+<img src="assets/profile_top.jpeg" alt="Profile tab top part" width="150" height="auto"> <img src="assets/profile-bottom.jpeg" alt="Profile tab bottom part" width="150" height="auto">
 
 
 The entry point of the fraud detector. Here, the user enters their e-commerce information to subsequently create a fraud detection model tailored to their market. This step is necessary to use the fraud detector and requires an internet connection.
@@ -38,7 +38,7 @@ Here is an exhaustive list of all the required fields. All values are numericals
 |Growth rate %|The e-commerce growth rate in % (yearly)|
 
 ### Fraud detector
-[img]
+<img src="assets/detector.jpeg" alt="Fraud detector tab" width="150" height="auto">
 
 After submitting their market profile, the user can fill in the following fields to check whether a transaction is potentially fraudulent or not. Doesn't require an internet connection.
 |Field|Description|
@@ -49,13 +49,12 @@ After submitting their market profile, the user can fill in the following fields
 |Total price basket|The total amount paid by the customer for this basket|
 
 ### ChatBot
-[img]
+<img src="assets/chatbot.jpeg" alt="ChatBot tab" width="150" height="auto">
 
 The ChatBot has been trained to answer questions about the app and on the topic of frauds. It only works in English and is not a generative chatbot (such as ChatGPT). It means that you can submit a question without worrying about the reliability of the response. All answers have been drafted and approved by the team. The ChatBot requires an internet connection.
 
 ### Services
-
-[img]
+<img src="assets/services.jpeg" alt="Services tab" width="150" height="auto">
 
 The services are additional tools to verify if a customer is suspicious. It is a good practice to use them if a potential fraud has been detected.
 #### Email checker
