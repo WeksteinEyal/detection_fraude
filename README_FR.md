@@ -46,10 +46,10 @@ Voici une liste exhaustive de tous les champs requis. Toutes les valeurs sont nu
 Après avoir soumis son profil de marché, l'utilisateur peut remplir les champs suivants pour vérifier si une transaction est potentiellement frauduleuse ou non. Ne nécessite pas de connexion Internet.
 |Champ|Description|
 |---|---|
-|Prix minimum de l'article|Le moins cher des articles dans le panier du client|
-|Prix maximum de l'article|Le plus cher des articles dans le panier du client|
-|Quantité dans le panier|Le nombre d'articles dans le panier du client|
-|Prix total du panier|Le montant total payé par le client pour ce panier|
+|Minimum item price|Le moins cher des articles dans le panier du client|
+|Maximum item price|Le plus cher des articles dans le panier du client|
+|Quantity in basket|Le nombre d'articles dans le panier du client|
+|Total basket price|Le montant total payé par le client pour ce panier|
 
 ### ChatBot
 <img src="assets/chatbot.jpeg" alt="Onglet ChatBot" width="150" height="auto">
