@@ -67,7 +67,7 @@ This collaborative report system purpose is to report and check suspicious custo
 ## Download
 Unfortunately, despite having an IOS and MacOS compatibility and since we didn't upload on any store, the app currently cannot be used on IOS and MacOS.
 ### Android
-[download link](https://drive.google.com/uc?export=download&id=1Rf_cqEEIspfsSDNWcY4MLHr016_C7RwI)
+[download link](https://github.com/WeksteinEyal/detection_fraude/releases/download/Android/fraud_block_1.0.11.0.apk)
 ### Windows
 [download link](https://drive.google.com/uc?export=download&id=1joEPXb3MOEKN5G9aDT22bvMbUvYnoYfL)
 
