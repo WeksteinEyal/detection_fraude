@@ -69,7 +69,7 @@ Unfortunately, despite having an IOS and MacOS compatibility and since we didn't
 ### Android
 [download link](https://github.com/WeksteinEyal/detection_fraude/releases/download/Android/fraud_block_1.0.11.0.apk)
 ### Windows
-[download link](https://drive.google.com/uc?export=download&id=1joEPXb3MOEKN5G9aDT22bvMbUvYnoYfL)
+[download link](https://github.com/WeksteinEyal/detection_fraude/releases/download/Windows/Fraud_Block_1.0.11.0.zip)
 
 To install Fraud Block on your windows machine :
 
