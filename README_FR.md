@@ -21,7 +21,7 @@ Depuis l'onglet [Services](#services), l'utilisateur peut également vérifier s
 
 ## Documentation d'utilisation
 ### Profil
-<img src="assets/profile_top.jpeg" alt="Partie supérieure de l'onglet Profil" width="150" height="auto"> <img src="assets/profile-bottom.jpeg" alt="Partie inférieure de l'onglet Profil" width="150" height="auto">
+<img src="assets/profile_top.png" alt="Partie supérieure de l'onglet Profil" width="150" height="auto"> <img src="assets/profile-bottom.png" alt="Partie inférieure de l'onglet Profil" width="150" height="auto">
 
 
 Le point d'entrée du détecteur de fraude. Ici, l'utilisateur saisit ses informations e-commerce pour créer ultérieurement un modèle de détection de fraude adapté à son marché. Cette étape est nécessaire pour utiliser le détecteur de fraude et nécessite une connexion Internet.
@@ -41,7 +41,7 @@ Voici une liste exhaustive de tous les champs requis. Toutes les valeurs sont nu
 |Growth rate %|Le taux de croissance e-commerce en % (annuel)|
 
 ### Détecteur de fraude
-<img src="assets/detector.jpeg" alt="Onglet Détecteur de fraude" width="150" height="auto">
+<img src="assets/detector.png" alt="Onglet Détecteur de fraude" width="150" height="auto">
 
 Après avoir soumis son profil de marché, l'utilisateur peut remplir les champs suivants pour vérifier si une transaction est potentiellement frauduleuse ou non. Ne nécessite pas de connexion Internet.
 |Champ|Description|
@@ -52,12 +52,12 @@ Après avoir soumis son profil de marché, l'utilisateur peut remplir les champs
 |Total basket price|Le montant total payé par le client pour ce panier|
 
 ### ChatBot
-<img src="assets/chatbot.jpeg" alt="Onglet ChatBot" width="150" height="auto">
+<img src="assets/chatbot.png" alt="Onglet ChatBot" width="150" height="auto">
 
 Le ChatBot a été formé pour répondre aux questions sur l'application et sur le sujet des fraudes. Il ne fonctionne qu'en anglais et n'est pas un chatbot génératif (comme ChatGPT). Cela signifie que vous pouvez soumettre une question sans vous soucier de la fiabilité de la réponse. Toutes les réponses ont été rédigées et approuvées par l'équipe. Le ChatBot nécessite une connexion Internet.
 
 ### Services
-<img src="assets/services.jpeg" alt="Onglet Services" width="150" height="auto">
+<img src="assets/services.png" alt="Onglet Services" width="150" height="auto">
 
 Les services sont des outils supplémentaires pour vérifier si un client est suspect. Il est conseillé de les utiliser si une fraude potentielle a été détectée.
 #### Vérificateur d'e-mails
