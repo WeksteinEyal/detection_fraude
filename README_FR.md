@@ -69,7 +69,7 @@ Ce système de signalement collaboratif a pour but de signaler et de vérifier l
 ## Téléchargement
 Malheureusement, malgré sa compatibilité avec iOS et MacOS, et comme nous ne l'avons pas téléchargée sur un magasin d'applications, l'application ne peut actuellement pas être utilisée sur iOS et MacOS.
 ### Android
-[lien de téléchargement](https://drive.google.com/uc?export=download&id=1Rf_cqEEIspfsSDNWcY4MLHr016_C7RwI)
+[lien de téléchargement](https://github.com/WeksteinEyal/detection_fraude/releases/download/Android/fraud_block_1.0.11.0.apk)
 ### Windows
 [lien de téléchargement](https://drive.google.com/uc?export=download&id=1joEPXb3MOEKN5G9aDT22bvMbUvYnoYfL)
 
