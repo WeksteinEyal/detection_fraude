@@ -46,7 +46,7 @@ After submitting their market profile, the user can fill in the following fields
 |Minimum item price|The least expensive item in the customer's basket|
 |Maximum item price|The most expensive item in the customer's basket|
 |Quantity in basket|The amount of items in the customer's basket|
-|Total price basket|The total amount paid by the customer for this basket|
+|Total basket price|The total amount paid by the customer for this basket|
 
 ### ChatBot
 <img src="assets/chatbot.jpeg" alt="ChatBot tab" width="150" height="auto">
