@@ -1,4 +1,5 @@
 # Fraud Block
+🇫🇷 [Version française](README_FR.md)
 ## Introduction
 The Fraud Block project is an open source security tool for e-retailers. Its aim is to assist in identifying abnormal transactions for an e-commerce platform. It fills the gap of lacking free tools that can be made available to everyone to protect themselves from fraudulent transactions, solely using non-sensitive information.
 
