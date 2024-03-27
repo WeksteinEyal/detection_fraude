@@ -29,16 +29,16 @@ Le point d'entrée du détecteur de fraude. Ici, l'utilisateur saisit ses inform
 Voici une liste exhaustive de tous les champs requis. Toutes les valeurs sont numériques et peuvent être des entiers ou des décimales.
 |Champ|Description|
 |---|---|
-|Prix moyen de l'article|Le prix moyen de tous les différents articles en vente|
-|Prix minimum de l'article|L'article le moins cher en vente|
-|Prix maximum de l'article|L'article le plus cher en vente|
-|Prix moyen du panier|Le prix moyen du panier de tous les différents articles vendus|
-|Prix minimum du panier|Le panier le moins cher vendu|
-|Prix maximum du panier|Le panier le plus cher vendu|
-|Quantité moyenne dans le panier|La quantité moyenne d'articles par panier parmi tous les différents articles vendus|
-|Quantité minimum dans le panier|La plus petite quantité d'articles vendus|
-|Quantité maximum dans le panier|La plus grande quantité d'articles vendus|
-|Taux de croissance %|Le taux de croissance e-commerce en % (annuel)|
+|Average item price|Le prix moyen de tous les différents articles en vente|
+|Minimum item price|L'article le moins cher en vente|
+|Maximum item price|L'article le plus cher en vente|
+|Average basket price|Le prix moyen du panier de tous les différents articles vendus|
+|Minimum basket price|Le panier le moins cher vendu|
+|Maximum basket price|Le panier le plus cher vendu|
+|Average basket quantity|La quantité moyenne d'articles par panier parmi tous les différents articles vendus|
+|Minimum basket quantity|La plus petite quantité d'articles vendus|
+|Maximum basket quantity|La plus grande quantité d'articles vendus|
+|Growth rate %|Le taux de croissance e-commerce en % (annuel)|
 
 ### Détecteur de fraude
 <img src="assets/detector.jpeg" alt="Onglet Détecteur de fraude" width="150" height="auto">
