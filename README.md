@@ -72,7 +72,7 @@ Unfortunately, despite having an IOS and MacOS compatibility and since we didn't
 
 To install Fraud Block on your windows machine :
 
-1) Right click on the downloaded zip file **Fraud_Block_1.0.8.0.zip**
+1) Right click on the downloaded zip file **Fraud_Block_1.0.x.x.zip**
 <img src="assets/install_fraudblock_0.png" alt="install 1" width="400" height="auto">
 
 2) Click on "Extract all..."
@@ -81,10 +81,10 @@ To install Fraud Block on your windows machine :
 3) You can choose a destination folder for the installation directory or leave it as the original. Click on "Extract."
 <img src="assets/install_fraudblock_-2.png" alt="install 3" width="400" height="auto">
 
-4) Open the folder **Fraud_Block_1.0.8.0**
+4) Open the folder **Fraud_Block_1.0.x.x**
 <img src="assets/install_fraudblock_-3.png" alt="install 4" width="400" height="auto">
 
-5) Open the security certificate **Fraud_Block_1.0.8.0_x64.cer**.
+5) Open the security certificate **Fraud_Block_1.0.x.x_x64.cer**.
 <img src="assets/install_fraudblock_1.png" alt="install 5" width="400" height="auto">
 
 6) Click on "Install Certificate...".
@@ -108,7 +108,7 @@ To install Fraud Block on your windows machine :
 12) Click "OK" and then "OK" again.
 <img src="assets/install_fraudblock_8.png" alt="install 12" width="400" height="auto">
 
-13) Open the file **Fraud_Block_1.0.8.0_x64.msix**.
+13) Open the file **Fraud_Block_1.0.x.x_x64.msix**.
 <img src="assets/install_fraudblock_9.png" alt="install 13" width="400" height="auto">
 
 14) Click on "Install".
